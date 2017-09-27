@@ -12,4 +12,4 @@ mileage interface(carid, mileage, duration, )
 deploy car(licensenumber,driverid,fuelusageid, origin, arrivaldate, deploymentdescription 
 
 )
-
+b, cm,ch,dl,dm,dh,e,f,g,i

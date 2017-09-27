@@ -100,7 +100,7 @@ class Ui_deploycar(object):
         self.frame_6.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_6.setObjectName("frame_6")
         self.gridLayout_5.addWidget(self.frame_6, 2, 3, 1, 1)
-
+        
         self.retranslateUi(deploycar)
         QtCore.QMetaObject.connectSlotsByName(deploycar)
         deploycar.setTabOrder(self.licensenumber, self.driverid)

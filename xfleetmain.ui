@@ -123,7 +123,7 @@ QTabWidget{border:0px;}</string>
     <item row="0" column="1">
      <widget class="QStackedWidget" name="mainstackedwidget">
       <property name="currentIndex">
-       <number>6</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="page">
        <layout class="QGridLayout" name="gridLayout">
@@ -139,11 +139,7 @@ QTabWidget{border:0px;}</string>
               <attribute name="title">
                <string>All Cars</string>
               </attribute>
-              <layout class="QGridLayout" name="gridLayout_12">
-               <item row="0" column="0">
-                <widget class="QTableWidget" name="tableWidget"/>
-               </item>
-              </layout>
+              <layout class="QGridLayout" name="gridLayout_5"/>
              </widget>
              <widget class="QWidget" name="tab_2">
               <attribute name="title">
@@ -179,7 +175,7 @@ QTabWidget{border:0px;}</string>
                  </column>
                  <column>
                   <property name="text">
-                   <string>Return</string>
+                   <string>Return Expected Time</string>
                   </property>
                  </column>
                 </widget>
@@ -558,7 +554,7 @@ QTabWidget{border:0px;}</string>
         <item row="0" column="0">
          <widget class="QTabWidget" name="driverwidget">
           <property name="currentIndex">
-           <number>2</number>
+           <number>0</number>
           </property>
           <widget class="QWidget" name="tab_4">
            <attribute name="title">
@@ -567,6 +563,11 @@ QTabWidget{border:0px;}</string>
            <layout class="QGridLayout" name="gridLayout_4">
             <item row="0" column="0">
              <widget class="QTableWidget" name="tableWidget_3">
+              <column>
+               <property name="text">
+                <string>Driver ID</string>
+               </property>
+              </column>
               <column>
                <property name="text">
                 <string>First Name</string>
@@ -580,16 +581,6 @@ QTabWidget{border:0px;}</string>
               <column>
                <property name="text">
                 <string>Phone</string>
-               </property>
-              </column>
-              <column>
-               <property name="text">
-                <string>Email</string>
-               </property>
-              </column>
-              <column>
-               <property name="text">
-                <string>Address</string>
                </property>
               </column>
               <column>
@@ -604,73 +595,12 @@ QTabWidget{border:0px;}</string>
               </column>
               <column>
                <property name="text">
-                <string>Permit Number</string>
-               </property>
-              </column>
-              <column>
-               <property name="text">
                 <string>Permit Class</string>
                </property>
               </column>
               <column>
                <property name="text">
                 <string>Status</string>
-               </property>
-              </column>
-             </widget>
-            </item>
-           </layout>
-          </widget>
-          <widget class="QWidget" name="tab_5">
-           <attribute name="title">
-            <string>Deployed Drivers</string>
-           </attribute>
-           <layout class="QGridLayout" name="gridLayout_5">
-            <item row="0" column="0">
-             <widget class="QTableWidget" name="tableWidget_4">
-              <column>
-               <property name="text">
-                <string>First Name</string>
-               </property>
-              </column>
-              <column>
-               <property name="text">
-                <string>Last Name</string>
-               </property>
-              </column>
-              <column>
-               <property name="text">
-                <string>Driver ID</string>
-               </property>
-              </column>
-              <column>
-               <property name="text">
-                <string>Phone</string>
-               </property>
-              </column>
-              <column>
-               <property name="text">
-                <string>Car Licencce Number</string>
-               </property>
-              </column>
-              <column>
-               <property name="text">
-                <string>Origin</string>
-               </property>
-              </column>
-              <column>
-               <property name="text">
-                <string>Destination</string>
-               </property>
-              </column>
-              <column>
-               <property name="text">
-                <string>Time Out</string>
-               </property>
-              </column>
-              <column>
-               <property name="text">
-                <string>Fuel Card Number</string>
                </property>
               </column>
              </widget>
@@ -1588,10 +1518,12 @@ QTabWidget{border:0px;}</string>
               </property>
               <column>
                <property name="text">
-                <string/>
+                <string>Service ID</string>
                </property>
-               <property name="textAlignment">
-                <set>AlignHCenter|AlignVCenter|AlignCenter</set>
+              </column>
+              <column>
+               <property name="text">
+                <string>Driver ID</string>
                </property>
               </column>
               <column>
@@ -1601,7 +1533,12 @@ QTabWidget{border:0px;}</string>
               </column>
               <column>
                <property name="text">
-                <string>Driver ID</string>
+                <string>Type of Service</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Parts fixed</string>
                </property>
               </column>
               <column>
@@ -1612,11 +1549,6 @@ QTabWidget{border:0px;}</string>
               <column>
                <property name="text">
                 <string>Date of Activity</string>
-               </property>
-              </column>
-              <column>
-               <property name="text">
-                <string>Type Maintenance</string>
                </property>
               </column>
               <column>
@@ -2589,7 +2521,6 @@ QTabWidget{border:0px;}</string>
   <tabstop>lineEdit_2</tabstop>
   <tabstop>driverwidget</tabstop>
   <tabstop>tableWidget_3</tabstop>
-  <tabstop>tableWidget_4</tabstop>
   <tabstop>carsbutton</tabstop>
   <tabstop>toolButton_9</tabstop>
   <tabstop>fnamedrive</tabstop>
