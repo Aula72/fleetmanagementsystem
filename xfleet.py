@@ -18,12 +18,13 @@ class MainClassFleetX(QMainWindow, xfleetmain.Ui_FleetX):
         self.userbutton.clicked.connect(self.userdetails)
         self.uncertainitiesbutton.clicked.connect(self.uncertainity)
         self.searchbutton.clicked.connect(self.msearch)
-        self.logoutbutton.clicked.connect(self.cardeploy)
+        self.logoutbutton.clicked.connect(self.loginpage)
         self.driverphoto.pressed.connect(self.getfile)
         self.addcar.pressed.connect(self.addcarfunction)
         self.adddriverbutton.pressed.connect(self.driveraddfunction)
         self.addaccident.pressed.connect(self.addaccidenteventfunction)
         self.viewpreviousmaintenance.clicked.connect(self.viewpreviousmaintenancefunction)
+        self.loginbutton.clicked.connect(self.firstpage)
         #self.userbutton.clicked.connect(self.deploycarshow)
         self.trayicon = QIcon("icons/app-icon.png")
         self.objectrayicon = QSystemTrayIcon(self.trayicon, self)
@@ -38,9 +39,14 @@ class MainClassFleetX(QMainWindow, xfleetmain.Ui_FleetX):
 
     #deploycar is tab 7
     #driver details tab 8
+    def firstpage(self):
+        self.loginstackedwidget.setCurrentIndex(2)
+        self.cars()
+        self.carswidget.setCurrentIndex(0)
     def cars(self):
         self.mainstackedwidget.setCurrentIndex(0)
-    def drivers(self):git
+        
+    def drivers(self):
         self.mainstackedwidget.setCurrentIndex(1)
     def uncertainity(self):
         self.mainstackedwidget.setCurrentIndex(3)
@@ -56,6 +62,8 @@ class MainClassFleetX(QMainWindow, xfleetmain.Ui_FleetX):
         self.mainstackedwidget.setCurrentIndex(7)
     def driverdetails(self):
         self.mainstackedwidget.setCurrentIndex(8)
+    def loginpage(self):
+        self.loginstackedwidget.setCurrentIndex(0)
     def addcarfunction(self):
         self.license_number = self.licensenumber.text()
         self.car_model = self.carmodel.text()
@@ -144,14 +152,7 @@ class MainClassFleetX(QMainWindow, xfleetmain.Ui_FleetX):
             with self.f:
                 self.data = self.f.read()
     
-    '''            self.contents.setText(self.data)
-    def deploycarshow(self):
-        self.deploycarview = QDialog()
-        self.lookdeploy = deploycar.Ui_deploycar()
-        self.lookdeploy.setupUi(self.deploycarview)
-     
-        self.deploycarview.show()
-    '''
+    
     def savephoto(self):
         pass
     def pictures(self):
