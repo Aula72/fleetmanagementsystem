@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>mainfleet</class>
+ <widget class="QMainWindow" name="mainfleet">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>915</width>
+    <height>619</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>FleetX</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>true</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QTabWidget{
+background-color:#00bfff; color:red; border:0px;
+}
+QTreeWidget{
+background-color:#fffafa; font-size:15px; border:0px;
+}
+QTreeWidget::item::selected{
+color:#ffffff;
+}
+QTableWidget{
+border:0px;
+}
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QStackedWidget" name="mainstackwidget">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="page">
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QTabWidget" name="tabWidget">
+          <property name="currentIndex">
+           <number>0</number>
+          </property>
+          <widget class="QWidget" name="tab">
+           <attribute name="title">
+            <string>All Cars</string>
+           </attribute>
+           <layout class="QHBoxLayout" name="horizontalLayout_3">
+            <item>
+             <widget class="QTableWidget" name="carswidget_2"/>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="tab_2">
+           <attribute name="title">
+            <string>Deployed Cars</string>
+           </attribute>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="widget">
+       <layout class="QHBoxLayout" name="horizontalLayout_4">
+        <item>
+         <widget class="QTabWidget" name="deploymentwidget">
+          <property name="currentIndex">
+           <number>1</number>
+          </property>
+          <widget class="QWidget" name="tab_3">
+           <attribute name="title">
+            <string>Deploy Employ</string>
+           </attribute>
+          </widget>
+          <widget class="QWidget" name="tab_4">
+           <attribute name="title">
+            <string>Deployed Employes</string>
+           </attribute>
+          </widget>
+          <widget class="QWidget" name="tab_5">
+           <attribute name="title">
+            <string>All Employees</string>
+           </attribute>
+          </widget>
+          <widget class="QWidget" name="tab_6">
+           <attribute name="title">
+            <string>Add Employ</string>
+           </attribute>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="widget">
+       <layout class="QHBoxLayout" name="horizontalLayout_5">
+        <item>
+         <widget class="QTabWidget" name="carswidget">
+          <property name="currentIndex">
+           <number>1</number>
+          </property>
+          <widget class="QWidget" name="tab_7">
+           <attribute name="title">
+            <string>Deploy Car</string>
+           </attribute>
+           <layout class="QHBoxLayout" name="horizontalLayout_14">
+            <item>
+             <widget class="QFrame" name="frame">
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+              <widget class="QPushButton" name="pushButton">
+               <property name="geometry">
+                <rect>
+                 <x>310</x>
+                 <y>340</y>
+                 <width>131</width>
+                 <height>31</height>
+                </rect>
+               </property>
+               <property name="text">
+                <string>Deploy Car</string>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_2">
+               <property name="geometry">
+                <rect>
+                 <x>200</x>
+                 <y>160</y>
+                 <width>81</width>
+                 <height>31</height>
+                </rect>
+               </property>
+               <property name="text">
+                <string>Car Number</string>
+               </property>
+              </widget>
+              <widget class="QLineEdit" name="lineEdit_4">
+               <property name="geometry">
+                <rect>
+                 <x>350</x>
+                 <y>290</y>
+                 <width>171</width>
+                 <height>31</height>
+                </rect>
+               </property>
+              </widget>
+              <widget class="QLineEdit" name="lineEdit">
+               <property name="geometry">
+                <rect>
+                 <x>350</x>
+                 <y>170</y>
+                 <width>171</width>
+                 <height>31</height>
+                </rect>
+               </property>
+              </widget>
+              <widget class="QLineEdit" name="lineEdit_3">
+               <property name="geometry">
+                <rect>
+                 <x>350</x>
+                 <y>250</y>
+                 <width>171</width>
+                 <height>31</height>
+                </rect>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_3">
+               <property name="geometry">
+                <rect>
+                 <x>200</x>
+                 <y>210</y>
+                 <width>121</width>
+                 <height>16</height>
+                </rect>
+               </property>
+               <property name="text">
+                <string>Drive Number</string>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_5">
+               <property name="geometry">
+                <rect>
+                 <x>200</x>
+                 <y>290</y>
+                 <width>121</width>
+                 <height>21</height>
+                </rect>
+               </property>
+               <property name="text">
+                <string>Fuel Card Number</string>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label">
+               <property name="geometry">
+                <rect>
+                 <x>300</x>
+                 <y>130</y>
+                 <width>101</width>
+                 <height>16</height>
+                </rect>
+               </property>
+               <property name="text">
+                <string>DEPLOY CAR</string>
+               </property>
+              </widget>
+              <widget class="QLineEdit" name="lineEdit_2">
+               <property name="geometry">
+                <rect>
+                 <x>350</x>
+                 <y>210</y>
+                 <width>171</width>
+                 <height>31</height>
+                </rect>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_6">
+               <property name="geometry">
+                <rect>
+                 <x>200</x>
+                 <y>250</y>
+                 <width>71</width>
+                 <height>16</height>
+                </rect>
+               </property>
+               <property name="text">
+                <string>Destination</string>
+               </property>
+              </widget>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="tab_8">
+           <attribute name="title">
+            <string>Deployed Cars</string>
+           </attribute>
+          </widget>
+          <widget class="QWidget" name="tab_18">
+           <attribute name="title">
+            <string>Edit Car</string>
+           </attribute>
+           <widget class="QGroupBox" name="groupBox">
+            <property name="geometry">
+             <rect>
+              <x>220</x>
+              <y>100</y>
+              <width>161</width>
+              <height>181</height>
+             </rect>
+            </property>
+            <property name="title">
+             <string>GroupBox</string>
+            </property>
+           </widget>
+          </widget>
+          <widget class="QWidget" name="tab_17">
+           <attribute name="title">
+            <string>Add Car</string>
+           </attribute>
+          </widget>
+          <widget class="QWidget" name="tab_19">
+           <attribute name="title">
+            <string>Remove Car</string>
+           </attribute>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_2">
+       <layout class="QHBoxLayout" name="horizontalLayout_6">
+        <item>
+         <widget class="QTabWidget" name="driverdetails">
+          <property name="currentIndex">
+           <number>5</number>
+          </property>
+          <widget class="QWidget" name="alldriverstab">
+           <attribute name="title">
+            <string>All Drivers</string>
+           </attribute>
+          </widget>
+          <widget class="QWidget" name="deploydrivertab">
+           <attribute name="title">
+            <string>Deployed Drivers</string>
+           </attribute>
+          </widget>
+          <widget class="QWidget" name="driverdetailstab">
+           <attribute name="title">
+            <string>View Diver Details</string>
+           </attribute>
+          </widget>
+          <widget class="QWidget" name="adddrivertab">
+           <attribute name="title">
+            <string>Add Driver</string>
+           </attribute>
+          </widget>
+          <widget class="QWidget" name="editdrivertab">
+           <attribute name="title">
+            <string>Edit Driver</string>
+           </attribute>
+          </widget>
+          <widget class="QWidget" name="removedrivetab">
+           <attribute name="title">
+            <string>Remove Driver</string>
+           </attribute>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_3">
+       <layout class="QHBoxLayout" name="horizontalLayout_7">
+        <item>
+         <widget class="QTabWidget" name="reporting">
+          <property name="currentIndex">
+           <number>5</number>
+          </property>
+          <widget class="QWidget" name="carreportstab">
+           <attribute name="title">
+            <string>Car Reports</string>
+           </attribute>
+           <layout class="QHBoxLayout" name="horizontalLayout_8">
+            <item>
+             <widget class="QTableWidget" name="tableWidget"/>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="driverreportstab">
+           <attribute name="title">
+            <string>Driver Reports</string>
+           </attribute>
+           <layout class="QHBoxLayout" name="horizontalLayout_9">
+            <item>
+             <widget class="QTableWidget" name="tableWidget_2"/>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="deploymentreportstab">
+           <attribute name="title">
+            <string>Deployment Reports</string>
+           </attribute>
+           <layout class="QHBoxLayout" name="horizontalLayout_10">
+            <item>
+             <widget class="QTableWidget" name="tableWidget_3"/>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="servicereportstab">
+           <attribute name="title">
+            <string>Service Reports</string>
+           </attribute>
+           <layout class="QHBoxLayout" name="horizontalLayout_11">
+            <item>
+             <widget class="QTableWidget" name="tableWidget_4"/>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="repairreportstab">
+           <attribute name="title">
+            <string>Repair Reports</string>
+           </attribute>
+           <layout class="QHBoxLayout" name="horizontalLayout_12">
+            <item>
+             <widget class="QTableWidget" name="tableWidget_5"/>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="uncertainitiesreportstab">
+           <attribute name="title">
+            <string>Uncertainity Reports</string>
+           </attribute>
+           <layout class="QHBoxLayout" name="horizontalLayout_13">
+            <item>
+             <widget class="QTableWidget" name="tableWidget_6"/>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>915</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuCars">
+    <property name="title">
+     <string>Cars</string>
+    </property>
+    <addaction name="All_Cars"/>
+    <addaction name="Deploy_Car"/>
+    <addaction name="Edit_Car"/>
+    <addaction name="Add_Car"/>
+    <addaction name="Remove_Car"/>
+    <addaction name="actionClose"/>
+   </widget>
+   <widget class="QMenu" name="menuDrivers">
+    <property name="title">
+     <string>Drivers</string>
+    </property>
+    <addaction name="All_Drivers"/>
+    <addaction name="Deploy_Driver"/>
+    <addaction name="Edit_Driver"/>
+    <addaction name="Add_Driver"/>
+    <addaction name="Remove_Driver"/>
+   </widget>
+   <widget class="QMenu" name="menuDeployments">
+    <property name="title">
+     <string>Deployments</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuUncertainities">
+    <property name="title">
+     <string>Uncertainities</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuReports">
+    <property name="title">
+     <string>Reports</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuUser_Details">
+    <property name="title">
+     <string>User Details</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuAbout_the_App">
+    <property name="title">
+     <string>About the App</string>
+    </property>
+   </widget>
+   <addaction name="menuCars"/>
+   <addaction name="menuDrivers"/>
+   <addaction name="menuDeployments"/>
+   <addaction name="menuUncertainities"/>
+   <addaction name="menuReports"/>
+   <addaction name="menuUser_Details"/>
+   <addaction name="menuAbout_the_App"/>
+  </widget>
+  <action name="All_Cars">
+   <property name="text">
+    <string>All Cars</string>
+   </property>
+  </action>
+  <action name="Deploy_Car">
+   <property name="text">
+    <string>Deploy Car</string>
+   </property>
+  </action>
+  <action name="Edit_Car">
+   <property name="text">
+    <string>Edit Car</string>
+   </property>
+  </action>
+  <action name="Add_Car">
+   <property name="text">
+    <string>Add Car</string>
+   </property>
+  </action>
+  <action name="Remove_Car">
+   <property name="text">
+    <string>Remove Car</string>
+   </property>
+  </action>
+  <action name="All_Drivers">
+   <property name="text">
+    <string>All Drivers</string>
+   </property>
+  </action>
+  <action name="Deploy_Driver">
+   <property name="text">
+    <string>Deploy Driver</string>
+   </property>
+  </action>
+  <action name="Edit_Driver">
+   <property name="text">
+    <string>Edit Driver</string>
+   </property>
+  </action>
+  <action name="Add_Driver">
+   <property name="text">
+    <string>Add Driver</string>
+   </property>
+  </action>
+  <action name="Remove_Driver">
+   <property name="text">
+    <string>Remove Driver</string>
+   </property>
+  </action>
+  <action name="actionClose">
+   <property name="text">
+    <string>Close </string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,16 @@
+<!DOCTYPE RCC>
+<RCC version="1.0">
+    <qresource prefix="/icons">
+        <file>icons/fleets.png</file>
+        <file>icons/edit-car.png</file>
+        <file>icons/add-car.png</file>
+        <file>icons/remove-car.png</file>
+        <file>icons/add-driver.png</file>
+        <file>icons/edit-driver.png</file>
+        <file>icons/driver.png</file>
+        <file>icons/remove-driver.png</file>
+        <file>icons/deploy-driver.png</file> 
+        <file>icons/files.png</file>
+        <file>icons/app-icon.png</file>     
+    </qresource>
+</RCC>

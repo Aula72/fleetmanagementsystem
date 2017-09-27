@@ -1,0 +1,15 @@
+cars index 2
+driver index is 3
+reports index is 5
+service and repair index is 0
+user details 4
+uncertainities index is 6
+
+
+missing
+
+mileage interface(carid, mileage, duration, )
+deploy car(licensenumber,driverid,fuelusageid, origin, arrivaldate, deploymentdescription 
+
+)
+
