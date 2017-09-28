@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'loginui.ui'
 #
-# Created: Thu Sep 28 14:54:28 2017
+# Created: Thu Sep 28 14:56:25 2017
 #      by: PyQt5 UI code generator 5.3.1
 #
 # WARNING! All changes made in this file will be lost!

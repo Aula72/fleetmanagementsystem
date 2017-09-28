@@ -2,11 +2,11 @@ from PyQt5.QtCore import *
 from PyQt5.QtGui import *
 from PyQt5.QtWidgets import *
 import sys
-import xfleetmain #, deploycar, alldialog
+import uimain, deploycar, alldialog
 import os
 import shutil, time
 
-class MainClassFleetX(QMainWindow, xfleetmain.Ui_FleetX):
+class MainClassFleetX(QMainWindow, uimain.Ui_FleetX):
     signal = pyqtSignal()
     def __init__(self):
         QMainWindow.__init__(self)
