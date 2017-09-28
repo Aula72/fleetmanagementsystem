@@ -914,7 +914,7 @@ QLable{font-size:15px;}</string>
            <item row="0" column="1">
             <widget class="QStackedWidget" name="mainstackedwidget">
              <property name="currentIndex">
-              <number>1</number>
+              <number>0</number>
              </property>
              <widget class="QWidget" name="page_4">
               <layout class="QGridLayout" name="gridLayout_29">
@@ -924,13 +924,53 @@ QLable{font-size:15px;}</string>
                   <item row="0" column="0">
                    <widget class="QTabWidget" name="carswidget">
                     <property name="currentIndex">
-                     <number>0</number>
+                     <number>1</number>
                     </property>
                     <widget class="QWidget" name="tab">
                      <attribute name="title">
                       <string>All Cars</string>
                      </attribute>
-                     <layout class="QGridLayout" name="gridLayout_31"/>
+                     <layout class="QGridLayout" name="gridLayout_31">
+                      <item row="0" column="0">
+                       <widget class="QTableWidget" name="tableWidget">
+                        <column>
+                         <property name="text">
+                          <string>License Number</string>
+                         </property>
+                        </column>
+                        <column>
+                         <property name="text">
+                          <string>Mode</string>
+                         </property>
+                        </column>
+                        <column>
+                         <property name="text">
+                          <string>Color</string>
+                         </property>
+                        </column>
+                        <column>
+                         <property name="text">
+                          <string>Make</string>
+                         </property>
+                        </column>
+                        <column>
+                         <property name="text">
+                          <string>Fuel Type</string>
+                         </property>
+                        </column>
+                        <column>
+                         <property name="text">
+                          <string>Status</string>
+                         </property>
+                        </column>
+                        <column>
+                         <property name="text">
+                          <string>Delete</string>
+                         </property>
+                        </column>
+                       </widget>
+                      </item>
+                     </layout>
                     </widget>
                     <widget class="QWidget" name="tab_2">
                      <attribute name="title">
@@ -942,6 +982,16 @@ QLable{font-size:15px;}</string>
                         <column>
                          <property name="text">
                           <string>Licence Number</string>
+                         </property>
+                        </column>
+                        <column>
+                         <property name="text">
+                          <string>New Column</string>
+                         </property>
+                        </column>
+                        <column>
+                         <property name="text">
+                          <string>Deployment Details</string>
                          </property>
                         </column>
                         <column>
