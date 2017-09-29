@@ -38,8 +38,12 @@ class MainClassFleetX(QMainWindow, uimain.Ui_FleetX):
         self.usernamedisplay.setText("Aula")
         self.adddriverbutton.clicked.connect(self.getfile)
         self.backtocars.clicked.connect(self.cars)
+        
     #deploycar is tab 7
     #driver details tab 8
+    def deploying(self):
+        self.mainstackedwidget.setCurrentIndex(7)
+
     def firstpage(self):
         self.loginstackedwidget.setCurrentIndex(2)
         self.cars()

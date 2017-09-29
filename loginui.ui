@@ -38,7 +38,7 @@ QMainWindow{background-color:#fffafa;}
        <item row="0" column="0">
         <widget class="QStackedWidget" name="loginstackedwidget">
          <property name="currentIndex">
-          <number>2</number>
+          <number>0</number>
          </property>
          <widget class="QWidget" name="page">
           <layout class="QGridLayout" name="gridLayout_13">
@@ -940,7 +940,7 @@ QMainWindow{background-color:#fffafa;}
            <item row="0" column="1">
             <widget class="QStackedWidget" name="mainstackedwidget">
              <property name="currentIndex">
-              <number>3</number>
+              <number>0</number>
              </property>
              <widget class="QWidget" name="page_4">
               <layout class="QGridLayout" name="gridLayout_29">
@@ -1416,7 +1416,7 @@ QMainWindow{background-color:#fffafa;}
                <item row="0" column="0">
                 <widget class="QTabWidget" name="driverwidget">
                  <property name="currentIndex">
-                  <number>0</number>
+                  <number>1</number>
                  </property>
                  <widget class="QWidget" name="tab_4">
                   <attribute name="title">
@@ -1532,42 +1532,42 @@ QMainWindow{background-color:#fffafa;}
                        <widget class="QComboBox" name="permitclass">
                         <item>
                          <property name="text">
-                          <string>Class B</string>
+                          <string>B</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>Class CM</string>
+                          <string>CM</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>Class CH</string>
+                          <string>CH</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>Class DL</string>
+                          <string>DL</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>Class DH</string>
+                          <string>DH</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>Class E</string>
+                          <string>E</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>Class G</string>
+                          <string>G</string>
                          </property>
                         </item>
                         <item>
                          <property name="text">
-                          <string>Class I</string>
+                          <string>I</string>
                          </property>
                         </item>
                        </widget>
@@ -1855,7 +1855,23 @@ QMainWindow{background-color:#fffafa;}
                        </widget>
                       </item>
                       <item row="3" column="0">
-                       <widget class="QComboBox" name="carstatus"/>
+                       <widget class="QComboBox" name="carstatus">
+                        <item>
+                         <property name="text">
+                          <string>None</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>Minor demage</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>Major damage</string>
+                         </property>
+                        </item>
+                       </widget>
                       </item>
                      </layout>
                     </widget>
@@ -1927,10 +1943,42 @@ QMainWindow{background-color:#fffafa;}
                        </widget>
                       </item>
                       <item row="2" column="0">
-                       <widget class="QComboBox" name="driverstatus"/>
+                       <widget class="QComboBox" name="driverstatus">
+                        <item>
+                         <property name="text">
+                          <string>Not Injured</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>Injured</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>Dead</string>
+                         </property>
+                        </item>
+                       </widget>
                       </item>
                       <item row="3" column="0">
-                       <widget class="QComboBox" name="passengerstatus"/>
+                       <widget class="QComboBox" name="passengerstatus">
+                        <item>
+                         <property name="text">
+                          <string>Not Injured</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>Injured</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>Dead</string>
+                         </property>
+                        </item>
+                       </widget>
                       </item>
                      </layout>
                     </widget>
@@ -2097,7 +2145,7 @@ QMainWindow{background-color:#fffafa;}
                     <widget class="QTableWidget" name="accidentable">
                      <column>
                       <property name="text">
-                       <string>Car Licence Number</string>
+                       <string>Licence Number</string>
                       </property>
                      </column>
                      <column>
@@ -2199,7 +2247,7 @@ QMainWindow{background-color:#fffafa;}
                       <item row="0" column="0">
                        <widget class="QLabel" name="label_42">
                         <property name="text">
-                         <string>Car licence plate number</string>
+                         <string>Car license  number</string>
                         </property>
                        </widget>
                       </item>
