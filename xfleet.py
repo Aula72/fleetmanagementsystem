@@ -36,7 +36,8 @@ class MainClassFleetX(QMainWindow, uimain.Ui_FleetX):
         self.xclose.triggered.connect(self.close)
         self.objectrayicon.show()
         self.usernamedisplay.setText("Aula")
-
+        self.adddriverbutton.clicked.connect(self.getfile)
+        self.backtocars.clicked.connect(self.cars)
     #deploycar is tab 7
     #driver details tab 8
     def firstpage(self):
@@ -122,25 +123,25 @@ class MainClassFleetX(QMainWindow, uimain.Ui_FleetX):
         self.viewpreviousmaintenance.setItem(self.newitem,3,self.r4)
     def getfile(self):        
         self.fname = QFileDialog()
-        self.upl=self.fname.getOpenFileName(self, 'Open File',"c\\","Image Files (*.gif *.jpg *.png)")
+        self.upl=self.fname.getOpenFileName(self, 'Open File',"c:\\","Image Files (*.gif *.jpg *.png)")
         print(self.upl)
         print(os.getcwd())
         #print(os.path.dirname(os.path.realpath(self.upl)))
         #print(os.path.mv(self.upl))
-        '''
+        
         self.destpath = 'D:\\FLEET\\fleetmanagement\\aula\\'
         #self.saveto = (self.destpath,os.path.dirname(self.upl))
-        #self.saveto = os.path.join(self.destpath,os.path.dirname(self.upl))
+        self.saveto = os.path.join(self.destpath,os.path.dirname(self.upl))
         
         os.makedirs(self.saveto)
         shutil.copy(self.upl, self.destpath)
         assert not os.path.abspath(self.upl)
         
         #self.srcfile = 
-        '''
-        #self.n = os.ctermid(self.saveto)
-        #print(self.n)
-        #shutil.move(self.saveto, self.destpath)
+        
+        self.n = os.ctermid(self.saveto)
+        print(self.n)
+        shutil.move(self.saveto, self.destpath)
     def getfiles(self):
         self.dlg = QFileDialog()
         self.dlg.setFileMode(QFileDialog.AnyFile)

@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>999</width>
-    <height>590</height>
+    <height>624</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,7 +17,12 @@
    <string notr="true">QToolButton{
 height:25px; width:80px;
 }
-QLable{font-size:15px;}</string>
+QLable{font-size:15px;}
+QTabWidet{border:0px;  background-color:#fffafa;}
+QTableWidget{border:0px; background-color:#fffafa;}
+QMainWindow{background-color:#fffafa;}
+
+</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QGridLayout" name="gridLayout_3">
@@ -33,7 +38,7 @@ QLable{font-size:15px;}</string>
        <item row="0" column="0">
         <widget class="QStackedWidget" name="loginstackedwidget">
          <property name="currentIndex">
-          <number>0</number>
+          <number>2</number>
          </property>
          <widget class="QWidget" name="page">
           <layout class="QGridLayout" name="gridLayout_13">
@@ -148,27 +153,85 @@ QLable{font-size:15px;}</string>
                  <enum>QFrame::Raised</enum>
                 </property>
                 <layout class="QGridLayout" name="gridLayout_6">
-                 <item row="0" column="0">
-                  <widget class="QFrame" name="frame_22">
+                 <item row="1" column="4">
+                  <spacer name="horizontalSpacer">
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>40</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                 <item row="1" column="1">
+                  <spacer name="horizontalSpacer_2">
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>40</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                 <item row="1" column="3">
+                  <widget class="QFrame" name="frame_5">
                    <property name="frameShape">
                     <enum>QFrame::StyledPanel</enum>
                    </property>
                    <property name="frameShadow">
                     <enum>QFrame::Raised</enum>
                    </property>
+                   <layout class="QGridLayout" name="gridLayout_4">
+                    <item row="0" column="3">
+                     <widget class="QFrame" name="frame_31">
+                      <property name="frameShape">
+                       <enum>QFrame::StyledPanel</enum>
+                      </property>
+                      <property name="frameShadow">
+                       <enum>QFrame::Raised</enum>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="0">
+                     <widget class="QLineEdit" name="logginusername"/>
+                    </item>
+                    <item row="1" column="0">
+                     <widget class="QLineEdit" name="logginpass">
+                      <property name="echoMode">
+                       <enum>QLineEdit::Password</enum>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="2">
+                     <widget class="QFrame" name="frame_30">
+                      <property name="frameShape">
+                       <enum>QFrame::StyledPanel</enum>
+                      </property>
+                      <property name="frameShadow">
+                       <enum>QFrame::Raised</enum>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="1">
+                     <widget class="QFrame" name="frame_32">
+                      <property name="frameShape">
+                       <enum>QFrame::StyledPanel</enum>
+                      </property>
+                      <property name="frameShadow">
+                       <enum>QFrame::Raised</enum>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
                   </widget>
                  </item>
-                 <item row="0" column="3">
-                  <widget class="QFrame" name="frame_23">
-                   <property name="frameShape">
-                    <enum>QFrame::StyledPanel</enum>
-                   </property>
-                   <property name="frameShadow">
-                    <enum>QFrame::Raised</enum>
-                   </property>
-                  </widget>
-                 </item>
-                 <item row="0" column="4">
+                 <item row="1" column="0">
                   <widget class="QFrame" name="frame_24">
                    <property name="frameShape">
                     <enum>QFrame::StyledPanel</enum>
@@ -178,7 +241,7 @@ QLable{font-size:15px;}</string>
                    </property>
                   </widget>
                  </item>
-                 <item row="0" column="5">
+                 <item row="1" column="2">
                   <widget class="QFrame" name="frame_4">
                    <property name="frameShape">
                     <enum>QFrame::StyledPanel</enum>
@@ -234,77 +297,18 @@ QLable{font-size:15px;}</string>
                    </layout>
                   </widget>
                  </item>
-                 <item row="0" column="1">
-                  <widget class="QFrame" name="frame_28">
-                   <property name="frameShape">
-                    <enum>QFrame::StyledPanel</enum>
-                   </property>
-                   <property name="frameShadow">
-                    <enum>QFrame::Raised</enum>
-                   </property>
-                  </widget>
-                 </item>
-                 <item row="0" column="6">
-                  <widget class="QFrame" name="frame_5">
-                   <property name="frameShape">
-                    <enum>QFrame::StyledPanel</enum>
-                   </property>
-                   <property name="frameShadow">
-                    <enum>QFrame::Raised</enum>
-                   </property>
-                   <layout class="QGridLayout" name="gridLayout_4">
-                    <item row="0" column="3">
-                     <widget class="QFrame" name="frame_31">
-                      <property name="frameShape">
-                       <enum>QFrame::StyledPanel</enum>
-                      </property>
-                      <property name="frameShadow">
-                       <enum>QFrame::Raised</enum>
-                      </property>
-                     </widget>
-                    </item>
-                    <item row="0" column="0">
-                     <widget class="QLineEdit" name="logginusername"/>
-                    </item>
-                    <item row="1" column="0">
-                     <widget class="QLineEdit" name="logginpass">
-                      <property name="echoMode">
-                       <enum>QLineEdit::Password</enum>
-                      </property>
-                     </widget>
-                    </item>
-                    <item row="0" column="2">
-                     <widget class="QFrame" name="frame_30">
-                      <property name="frameShape">
-                       <enum>QFrame::StyledPanel</enum>
-                      </property>
-                      <property name="frameShadow">
-                       <enum>QFrame::Raised</enum>
-                      </property>
-                     </widget>
-                    </item>
-                    <item row="0" column="1">
-                     <widget class="QFrame" name="frame_32">
-                      <property name="frameShape">
-                       <enum>QFrame::StyledPanel</enum>
-                      </property>
-                      <property name="frameShadow">
-                       <enum>QFrame::Raised</enum>
-                      </property>
-                     </widget>
-                    </item>
-                   </layout>
-                  </widget>
-                 </item>
                  <item row="0" column="2">
-                  <widget class="QFrame" name="frame_29">
-                   <property name="frameShape">
-                    <enum>QFrame::StyledPanel</enum>
+                  <spacer name="verticalSpacer_3">
+                   <property name="orientation">
+                    <enum>Qt::Vertical</enum>
                    </property>
-                   <property name="frameShadow">
-                    <enum>QFrame::Raised</enum>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>20</width>
+                     <height>40</height>
+                    </size>
                    </property>
-                  </widget>
+                  </spacer>
                  </item>
                 </layout>
                </widget>
@@ -318,6 +322,13 @@ QLable{font-size:15px;}</string>
                  <enum>QFrame::Raised</enum>
                 </property>
                 <layout class="QGridLayout" name="gridLayout_7">
+                 <item row="0" column="2" rowspan="2">
+                  <widget class="QPushButton" name="loginbutton">
+                   <property name="text">
+                    <string>Login</string>
+                   </property>
+                  </widget>
+                 </item>
                  <item row="0" column="0">
                   <widget class="QFrame" name="frame_34">
                    <property name="frameShape">
@@ -328,38 +339,53 @@ QLable{font-size:15px;}</string>
                    </property>
                   </widget>
                  </item>
-                 <item row="1" column="2">
-                  <widget class="QPushButton" name="pushButton_2">
-                   <property name="styleSheet">
-                    <string notr="true">border:0px;</string>
-                   </property>
-                   <property name="text">
-                    <string>Forgot password??</string>
-                   </property>
-                  </widget>
-                 </item>
-                 <item row="2" column="1">
-                  <widget class="QCheckBox" name="checkBox">
-                   <property name="text">
-                    <string>Keep me logged in</string>
-                   </property>
-                  </widget>
-                 </item>
-                 <item row="3" column="1">
+                 <item row="2" column="2">
                   <widget class="QWidget" name="widget_2" native="true"/>
                  </item>
-                 <item row="0" column="1" rowspan="2">
-                  <widget class="QPushButton" name="loginbutton">
-                   <property name="text">
-                    <string>Login</string>
+                 <item row="0" column="3">
+                  <spacer name="horizontalSpacer_3">
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
                    </property>
-                  </widget>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>40</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                 <item row="0" column="1">
+                  <spacer name="horizontalSpacer_4">
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>40</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                  </spacer>
                  </item>
                 </layout>
                </widget>
               </item>
-              <item row="2" column="0">
+              <item row="3" column="0">
                <widget class="QWidget" name="widget" native="true"/>
+              </item>
+              <item row="2" column="0">
+               <spacer name="verticalSpacer_4">
+                <property name="orientation">
+                 <enum>Qt::Vertical</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>20</width>
+                  <height>40</height>
+                 </size>
+                </property>
+               </spacer>
               </item>
              </layout>
             </widget>
@@ -914,7 +940,7 @@ QLable{font-size:15px;}</string>
            <item row="0" column="1">
             <widget class="QStackedWidget" name="mainstackedwidget">
              <property name="currentIndex">
-              <number>0</number>
+              <number>3</number>
              </property>
              <widget class="QWidget" name="page_4">
               <layout class="QGridLayout" name="gridLayout_29">
@@ -924,7 +950,7 @@ QLable{font-size:15px;}</string>
                   <item row="0" column="0">
                    <widget class="QTabWidget" name="carswidget">
                     <property name="currentIndex">
-                     <number>1</number>
+                     <number>0</number>
                     </property>
                     <widget class="QWidget" name="tab">
                      <attribute name="title">
@@ -932,7 +958,7 @@ QLable{font-size:15px;}</string>
                      </attribute>
                      <layout class="QGridLayout" name="gridLayout_31">
                       <item row="0" column="0">
-                       <widget class="QTableWidget" name="tableWidget">
+                       <widget class="QTableWidget" name="allcarstable">
                         <column>
                          <property name="text">
                           <string>License Number</string>
@@ -978,15 +1004,10 @@ QLable{font-size:15px;}</string>
                      </attribute>
                      <layout class="QGridLayout" name="gridLayout_32">
                       <item row="0" column="0">
-                       <widget class="QTableWidget" name="tableWidget_2">
+                       <widget class="QTableWidget" name="deployedcarstable">
                         <column>
                          <property name="text">
                           <string>Licence Number</string>
-                         </property>
-                        </column>
-                        <column>
-                         <property name="text">
-                          <string>New Column</string>
                          </property>
                         </column>
                         <column>
@@ -1016,7 +1037,7 @@ QLable{font-size:15px;}</string>
                         </column>
                         <column>
                          <property name="text">
-                          <string>Return Expected Time</string>
+                          <string>Return Time</string>
                          </property>
                         </column>
                        </widget>
@@ -1395,7 +1416,7 @@ QLable{font-size:15px;}</string>
                <item row="0" column="0">
                 <widget class="QTabWidget" name="driverwidget">
                  <property name="currentIndex">
-                  <number>1</number>
+                  <number>0</number>
                  </property>
                  <widget class="QWidget" name="tab_4">
                   <attribute name="title">
@@ -1403,7 +1424,7 @@ QLable{font-size:15px;}</string>
                   </attribute>
                   <layout class="QGridLayout" name="gridLayout_41">
                    <item row="0" column="0">
-                    <widget class="QTableWidget" name="tableWidget_3">
+                    <widget class="QTableWidget" name="alldriverstable">
                      <column>
                       <property name="text">
                        <string>Driver ID</string>
@@ -1745,7 +1766,7 @@ QLable{font-size:15px;}</string>
                  </property>
                  <layout class="QGridLayout" name="gridLayout_51">
                   <item row="0" column="0">
-                   <widget class="QTableWidget" name="tableWidget_5"/>
+                   <widget class="QTableWidget" name="searchresultstable"/>
                   </item>
                  </layout>
                 </widget>
@@ -2073,7 +2094,7 @@ QLable{font-size:15px;}</string>
                   </attribute>
                   <layout class="QGridLayout" name="gridLayout_65">
                    <item row="0" column="0">
-                    <widget class="QTableWidget" name="tableWidget_6">
+                    <widget class="QTableWidget" name="accidentable">
                      <column>
                       <property name="text">
                        <string>Car Licence Number</string>
@@ -2115,7 +2136,7 @@ QLable{font-size:15px;}</string>
              <widget class="QWidget" name="page_8">
               <layout class="QGridLayout" name="gridLayout_66">
                <item row="0" column="0">
-                <widget class="QTabWidget" name="tabWidget_2">
+                <widget class="QTabWidget" name="servicetable">
                  <property name="currentIndex">
                   <number>0</number>
                  </property>
@@ -2189,33 +2210,11 @@ QLable{font-size:15px;}</string>
                         </property>
                        </widget>
                       </item>
-                     </layout>
-                    </widget>
-                   </item>
-                   <item row="1" column="1" colspan="2">
-                    <widget class="QFrame" name="frame_79">
-                     <property name="frameShape">
-                      <enum>QFrame::StyledPanel</enum>
-                     </property>
-                     <property name="frameShadow">
-                      <enum>QFrame::Raised</enum>
-                     </property>
-                     <layout class="QGridLayout" name="gridLayout_70">
-                      <item row="0" column="0">
-                       <widget class="QLineEdit" name="numcarserv"/>
-                      </item>
-                      <item row="1" column="0">
-                       <widget class="QComboBox" name="servicebox">
-                        <item>
-                         <property name="text">
-                          <string>Service</string>
-                         </property>
-                        </item>
-                        <item>
-                         <property name="text">
-                          <string>Repair</string>
-                         </property>
-                        </item>
+                      <item row="2" column="0">
+                       <widget class="QLabel" name="label_87">
+                        <property name="text">
+                         <string>Invoice Number</string>
+                        </property>
                        </widget>
                       </item>
                      </layout>
@@ -2244,6 +2243,13 @@ QLable{font-size:15px;}</string>
                         </property>
                        </widget>
                       </item>
+                      <item row="2" column="0">
+                       <widget class="QLabel" name="label_88">
+                        <property name="text">
+                         <string>Invoice Image</string>
+                        </property>
+                       </widget>
+                      </item>
                      </layout>
                     </widget>
                    </item>
@@ -2256,11 +2262,36 @@ QLable{font-size:15px;}</string>
                       <enum>QFrame::Raised</enum>
                      </property>
                      <layout class="QGridLayout" name="gridLayout_72">
-                      <item row="0" column="0">
+                      <item row="2" column="0">
+                       <widget class="QLineEdit" name="invoiceimage"/>
+                      </item>
+                      <item row="2" column="1">
+                       <widget class="QPushButton" name="pushButton">
+                        <property name="text">
+                         <string/>
+                        </property>
+                        <property name="icon">
+                         <iconset resource="icons.qrc">
+                          <normaloff>:/icons/icons/files.png</normaloff>:/icons/icons/files.png</iconset>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="0" column="0" colspan="2">
                        <widget class="QLineEdit" name="drivernumserv"/>
                       </item>
-                      <item row="1" column="0">
-                       <widget class="QDateEdit" name="dateservice"/>
+                      <item row="1" column="0" colspan="2">
+                       <widget class="QDateEdit" name="dateservice">
+                        <property name="dateTime">
+                         <datetime>
+                          <hour>0</hour>
+                          <minute>0</minute>
+                          <second>0</second>
+                          <year>2017</year>
+                          <month>1</month>
+                          <day>1</day>
+                         </datetime>
+                        </property>
+                       </widget>
                       </item>
                      </layout>
                     </widget>
@@ -2293,7 +2324,7 @@ QLable{font-size:15px;}</string>
                       <enum>QFrame::Raised</enum>
                      </property>
                      <layout class="QGridLayout" name="gridLayout_74">
-                      <item row="0" column="0" alignment="Qt::AlignTop">
+                      <item row="0" column="0" colspan="2">
                        <widget class="QTextEdit" name="partsservice">
                         <property name="minimumSize">
                          <size>
@@ -2302,6 +2333,32 @@ QLable{font-size:15px;}</string>
                          </size>
                         </property>
                        </widget>
+                      </item>
+                      <item row="1" column="0">
+                       <spacer name="verticalSpacer">
+                        <property name="orientation">
+                         <enum>Qt::Vertical</enum>
+                        </property>
+                        <property name="sizeHint" stdset="0">
+                         <size>
+                          <width>20</width>
+                          <height>40</height>
+                         </size>
+                        </property>
+                       </spacer>
+                      </item>
+                      <item row="1" column="1">
+                       <spacer name="verticalSpacer_2">
+                        <property name="orientation">
+                         <enum>Qt::Vertical</enum>
+                        </property>
+                        <property name="sizeHint" stdset="0">
+                         <size>
+                          <width>20</width>
+                          <height>40</height>
+                         </size>
+                        </property>
+                       </spacer>
                       </item>
                      </layout>
                     </widget>
@@ -2386,6 +2443,38 @@ QLable{font-size:15px;}</string>
                      </property>
                     </widget>
                    </item>
+                   <item row="1" column="1" colspan="3">
+                    <widget class="QFrame" name="frame_79">
+                     <property name="frameShape">
+                      <enum>QFrame::StyledPanel</enum>
+                     </property>
+                     <property name="frameShadow">
+                      <enum>QFrame::Raised</enum>
+                     </property>
+                     <layout class="QGridLayout" name="gridLayout_70">
+                      <item row="0" column="0">
+                       <widget class="QLineEdit" name="numcarserv"/>
+                      </item>
+                      <item row="1" column="0">
+                       <widget class="QComboBox" name="servicebox">
+                        <item>
+                         <property name="text">
+                          <string>Service</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>Repair</string>
+                         </property>
+                        </item>
+                       </widget>
+                      </item>
+                      <item row="2" column="0">
+                       <widget class="QLineEdit" name="invoicenumber"/>
+                      </item>
+                     </layout>
+                    </widget>
+                   </item>
                   </layout>
                  </widget>
                  <widget class="QWidget" name="tab_10">
@@ -2401,6 +2490,60 @@ QLable{font-size:15px;}</string>
                      <column>
                       <property name="text">
                        <string>Service ID</string>
+                      </property>
+                     </column>
+                     <column>
+                      <property name="text">
+                       <string>Driver ID</string>
+                      </property>
+                     </column>
+                     <column>
+                      <property name="text">
+                       <string>Car Licence Number</string>
+                      </property>
+                     </column>
+                     <column>
+                      <property name="text">
+                       <string>Type of Service</string>
+                      </property>
+                     </column>
+                     <column>
+                      <property name="text">
+                       <string>Parts fixed</string>
+                      </property>
+                     </column>
+                     <column>
+                      <property name="text">
+                       <string>Invoice Number</string>
+                      </property>
+                     </column>
+                     <column>
+                      <property name="text">
+                       <string>Date of Activity</string>
+                      </property>
+                     </column>
+                     <column>
+                      <property name="text">
+                       <string>More Details</string>
+                      </property>
+                     </column>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                 <widget class="QWidget" name="tab_5">
+                  <attribute name="title">
+                   <string>View Previous Repair Details</string>
+                  </attribute>
+                  <layout class="QGridLayout" name="gridLayout_106">
+                   <item row="0" column="0">
+                    <widget class="QTableWidget" name="repairtable">
+                     <property name="dragEnabled">
+                      <bool>false</bool>
+                     </property>
+                     <column>
+                      <property name="text">
+                       <string>Repair ID</string>
                       </property>
                      </column>
                      <column>
@@ -2731,7 +2874,7 @@ QLable{font-size:15px;}</string>
                   <enum>QTabWidget::Triangular</enum>
                  </property>
                  <property name="currentIndex">
-                  <number>5</number>
+                  <number>0</number>
                  </property>
                  <widget class="QWidget" name="carreportstab">
                   <attribute name="title">
@@ -2739,7 +2882,7 @@ QLable{font-size:15px;}</string>
                   </attribute>
                   <layout class="QHBoxLayout" name="horizontalLayout_8">
                    <item>
-                    <widget class="QTableWidget" name="tableWidget_7"/>
+                    <widget class="QTableWidget" name="carsreporttable"/>
                    </item>
                   </layout>
                  </widget>
@@ -2749,7 +2892,7 @@ QLable{font-size:15px;}</string>
                   </attribute>
                   <layout class="QHBoxLayout" name="horizontalLayout_9">
                    <item>
-                    <widget class="QTableWidget" name="tableWidget_8"/>
+                    <widget class="QTableWidget" name="driverreporttable"/>
                    </item>
                   </layout>
                  </widget>
@@ -2759,7 +2902,7 @@ QLable{font-size:15px;}</string>
                   </attribute>
                   <layout class="QHBoxLayout" name="horizontalLayout_10">
                    <item>
-                    <widget class="QTableWidget" name="tableWidget_9"/>
+                    <widget class="QTableWidget" name="deploymentreporttable"/>
                    </item>
                   </layout>
                  </widget>
@@ -2769,7 +2912,7 @@ QLable{font-size:15px;}</string>
                   </attribute>
                   <layout class="QHBoxLayout" name="horizontalLayout_11">
                    <item>
-                    <widget class="QTableWidget" name="tableWidget_10"/>
+                    <widget class="QTableWidget" name="servicereporttable"/>
                    </item>
                   </layout>
                  </widget>
@@ -2779,7 +2922,7 @@ QLable{font-size:15px;}</string>
                   </attribute>
                   <layout class="QHBoxLayout" name="horizontalLayout_12">
                    <item>
-                    <widget class="QTableWidget" name="tableWidget_11"/>
+                    <widget class="QTableWidget" name="repairreporttable"/>
                    </item>
                   </layout>
                  </widget>
@@ -2789,7 +2932,7 @@ QLable{font-size:15px;}</string>
                   </attribute>
                   <layout class="QHBoxLayout" name="horizontalLayout_13">
                    <item>
-                    <widget class="QTableWidget" name="reportswidget"/>
+                    <widget class="QTableWidget" name="accidentsreporttable"/>
                    </item>
                   </layout>
                  </widget>
@@ -2843,7 +2986,7 @@ QLable{font-size:15px;}</string>
                               </property>
                              </widget>
                             </item>
-                            <item row="7" column="0">
+                            <item row="8" column="0">
                              <widget class="QLabel" name="label_70">
                               <property name="text">
                                <string>Fuel Card Number</string>
@@ -2871,6 +3014,13 @@ QLable{font-size:15px;}</string>
                               </property>
                              </widget>
                             </item>
+                            <item row="7" column="0">
+                             <widget class="QLabel" name="label_89">
+                              <property name="text">
+                               <string>Return Time</string>
+                              </property>
+                             </widget>
+                            </item>
                            </layout>
                           </widget>
                          </item>
@@ -2895,8 +3045,22 @@ QLable{font-size:15px;}</string>
                             <item row="3" column="0">
                              <widget class="QLineEdit" name="destination"/>
                             </item>
-                            <item row="4" column="0">
+                            <item row="5" column="0">
                              <widget class="QLineEdit" name="fuelcardnumber"/>
+                            </item>
+                            <item row="4" column="0">
+                             <widget class="QDateEdit" name="returntime">
+                              <property name="dateTime">
+                               <datetime>
+                                <hour>0</hour>
+                                <minute>0</minute>
+                                <second>0</second>
+                                <year>2017</year>
+                                <month>1</month>
+                                <day>1</day>
+                               </datetime>
+                              </property>
+                             </widget>
                             </item>
                            </layout>
                           </widget>
@@ -3005,6 +3169,35 @@ QLable{font-size:15px;}</string>
                         <property name="frameShadow">
                          <enum>QFrame::Raised</enum>
                         </property>
+                        <layout class="QGridLayout" name="gridLayout_107">
+                         <item row="0" column="0">
+                          <widget class="QPushButton" name="backtocars">
+                           <property name="styleSheet">
+                            <string notr="true">width:20px; height:20px; border:0px; border-radius:4px;</string>
+                           </property>
+                           <property name="text">
+                            <string/>
+                           </property>
+                           <property name="icon">
+                            <iconset resource="icons.qrc">
+                             <normaloff>:/icons/icons/backto.png</normaloff>:/icons/icons/backto.png</iconset>
+                           </property>
+                          </widget>
+                         </item>
+                         <item row="0" column="1">
+                          <spacer name="horizontalSpacer_5">
+                           <property name="orientation">
+                            <enum>Qt::Horizontal</enum>
+                           </property>
+                           <property name="sizeHint" stdset="0">
+                            <size>
+                             <width>40</width>
+                             <height>20</height>
+                            </size>
+                           </property>
+                          </spacer>
+                         </item>
+                        </layout>
                        </widget>
                       </item>
                       <item row="3" column="0">
