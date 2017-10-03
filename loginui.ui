@@ -35,6 +35,18 @@ QMainWindow{background-color:#fffafa;}
        <enum>QFrame::Raised</enum>
       </property>
       <layout class="QGridLayout" name="gridLayout">
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
        <item row="0" column="0">
         <widget class="QStackedWidget" name="loginstackedwidget">
          <property name="currentIndex">
@@ -659,6 +671,21 @@ QMainWindow{background-color:#fffafa;}
                   <enum>QFrame::Raised</enum>
                  </property>
                  <layout class="QGridLayout" name="gridLayout_19">
+                  <property name="leftMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="topMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="rightMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="bottomMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="horizontalSpacing">
+                   <number>5</number>
+                  </property>
                   <item row="1" column="0">
                    <widget class="QLabel" name="label_11">
                     <property name="text">
@@ -706,6 +733,18 @@ QMainWindow{background-color:#fffafa;}
                   <enum>QFrame::Raised</enum>
                  </property>
                  <layout class="QGridLayout" name="gridLayout_20">
+                  <property name="leftMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="topMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="rightMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="bottomMargin">
+                   <number>0</number>
+                  </property>
                   <item row="2" column="0">
                    <widget class="QLineEdit" name="userpasword"/>
                   </item>
@@ -848,6 +887,18 @@ QMainWindow{background-color:#fffafa;}
            <item row="0" column="0">
             <widget class="QWidget" name="widget_3" native="true">
              <layout class="QGridLayout" name="gridLayout_105">
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
               <item row="0" column="0">
                <widget class="QToolButton" name="toolButton_9">
                 <property name="text">
@@ -899,7 +950,7 @@ QMainWindow{background-color:#fffafa;}
               <item row="5" column="0">
                <widget class="QToolButton" name="uncertainitiesbutton">
                 <property name="text">
-                 <string>Uncertainities</string>
+                 <string>Accidents</string>
                 </property>
                </widget>
               </item>
@@ -910,14 +961,14 @@ QMainWindow{background-color:#fffafa;}
                 </property>
                </widget>
               </item>
-              <item row="7" column="0">
-               <widget class="QToolButton" name="userbutton">
+              <item row="8" column="0">
+               <widget class="QToolButton" name="logoutbutton">
                 <property name="text">
-                 <string>User Details</string>
+                 <string>Logout</string>
                 </property>
                </widget>
               </item>
-              <item row="8" column="0">
+              <item row="7" column="0">
                <widget class="QFrame" name="frame_55">
                 <property name="frameShape">
                  <enum>QFrame::StyledPanel</enum>
@@ -927,20 +978,13 @@ QMainWindow{background-color:#fffafa;}
                 </property>
                </widget>
               </item>
-              <item row="9" column="0">
-               <widget class="QToolButton" name="logoutbutton">
-                <property name="text">
-                 <string>Logout</string>
-                </property>
-               </widget>
-              </item>
              </layout>
             </widget>
            </item>
            <item row="0" column="1">
             <widget class="QStackedWidget" name="mainstackedwidget">
              <property name="currentIndex">
-              <number>0</number>
+              <number>5</number>
              </property>
              <widget class="QWidget" name="page_4">
               <layout class="QGridLayout" name="gridLayout_29">
@@ -1012,11 +1056,6 @@ QMainWindow{background-color:#fffafa;}
                         </column>
                         <column>
                          <property name="text">
-                          <string>Deployment Details</string>
-                         </property>
-                        </column>
-                        <column>
-                         <property name="text">
                           <string>Driver ID</string>
                          </property>
                         </column>
@@ -1037,10 +1076,495 @@ QMainWindow{background-color:#fffafa;}
                         </column>
                         <column>
                          <property name="text">
-                          <string>Return Time</string>
+                          <string>Return Date</string>
+                         </property>
+                        </column>
+                        <column>
+                         <property name="text">
+                          <string>Deployed By</string>
                          </property>
                         </column>
                        </widget>
+                      </item>
+                     </layout>
+                    </widget>
+                    <widget class="QWidget" name="tab_14">
+                     <attribute name="title">
+                      <string>Deploy Car</string>
+                     </attribute>
+                     <layout class="QGridLayout" name="gridLayout_89">
+                      <item row="0" column="0">
+                       <widget class="QFrame" name="frame_101">
+                        <property name="frameShape">
+                         <enum>QFrame::StyledPanel</enum>
+                        </property>
+                        <property name="frameShadow">
+                         <enum>QFrame::Raised</enum>
+                        </property>
+                        <layout class="QGridLayout" name="gridLayout_112">
+                         <item row="0" column="0">
+                          <widget class="QFrame" name="frame_112">
+                           <property name="frameShape">
+                            <enum>QFrame::StyledPanel</enum>
+                           </property>
+                           <property name="frameShadow">
+                            <enum>QFrame::Raised</enum>
+                           </property>
+                           <layout class="QGridLayout" name="gridLayout_107"/>
+                          </widget>
+                         </item>
+                         <item row="0" column="1" rowspan="2" colspan="2">
+                          <widget class="QFrame" name="frame_102">
+                           <property name="frameShape">
+                            <enum>QFrame::StyledPanel</enum>
+                           </property>
+                           <property name="frameShadow">
+                            <enum>QFrame::Raised</enum>
+                           </property>
+                           <layout class="QGridLayout" name="gridLayout_90">
+                            <item row="0" column="0">
+                             <spacer name="horizontalSpacer_9">
+                              <property name="orientation">
+                               <enum>Qt::Horizontal</enum>
+                              </property>
+                              <property name="sizeHint" stdset="0">
+                               <size>
+                                <width>40</width>
+                                <height>20</height>
+                               </size>
+                              </property>
+                             </spacer>
+                            </item>
+                            <item row="0" column="1">
+                             <widget class="QFrame" name="frame_103">
+                              <property name="frameShape">
+                               <enum>QFrame::StyledPanel</enum>
+                              </property>
+                              <property name="frameShadow">
+                               <enum>QFrame::Raised</enum>
+                              </property>
+                              <layout class="QGridLayout" name="gridLayout_91">
+                               <item row="3" column="0">
+                                <widget class="QLabel" name="label_69">
+                                 <property name="text">
+                                  <string>Drive Number</string>
+                                 </property>
+                                </widget>
+                               </item>
+                               <item row="8" column="0">
+                                <widget class="QLabel" name="label_70">
+                                 <property name="text">
+                                  <string>Fuel Card Number</string>
+                                 </property>
+                                </widget>
+                               </item>
+                               <item row="6" column="0">
+                                <widget class="QLabel" name="label_71">
+                                 <property name="text">
+                                  <string>Destination</string>
+                                 </property>
+                                </widget>
+                               </item>
+                               <item row="2" column="0">
+                                <widget class="QLabel" name="label_74">
+                                 <property name="text">
+                                  <string>License Number</string>
+                                 </property>
+                                </widget>
+                               </item>
+                               <item row="7" column="0">
+                                <widget class="QLabel" name="label_89">
+                                 <property name="text">
+                                  <string>Return Date</string>
+                                 </property>
+                                </widget>
+                               </item>
+                               <item row="5" column="0">
+                                <widget class="QLabel" name="label_72">
+                                 <property name="text">
+                                  <string>Origin</string>
+                                 </property>
+                                </widget>
+                               </item>
+                               <item row="9" column="0">
+                                <widget class="QLabel" name="label_91">
+                                 <property name="text">
+                                  <string>Litres of Fuel</string>
+                                 </property>
+                                </widget>
+                               </item>
+                              </layout>
+                             </widget>
+                            </item>
+                            <item row="0" column="2">
+                             <widget class="QFrame" name="frame_104">
+                              <property name="frameShape">
+                               <enum>QFrame::StyledPanel</enum>
+                              </property>
+                              <property name="frameShadow">
+                               <enum>QFrame::Raised</enum>
+                              </property>
+                              <layout class="QGridLayout" name="gridLayout_92">
+                               <item row="0" column="0">
+                                <widget class="QLineEdit" name="licensenumber_2"/>
+                               </item>
+                               <item row="5" column="0">
+                                <widget class="QLineEdit" name="fuelcardnumber"/>
+                               </item>
+                               <item row="3" column="0">
+                                <widget class="QLineEdit" name="destination"/>
+                               </item>
+                               <item row="1" column="0">
+                                <widget class="QLineEdit" name="driverid_2"/>
+                               </item>
+                               <item row="2" column="0">
+                                <widget class="QLineEdit" name="origin"/>
+                               </item>
+                               <item row="4" column="0">
+                                <widget class="QDateEdit" name="returntime">
+                                 <property name="dateTime">
+                                  <datetime>
+                                   <hour>0</hour>
+                                   <minute>0</minute>
+                                   <second>0</second>
+                                   <year>2017</year>
+                                   <month>1</month>
+                                   <day>1</day>
+                                  </datetime>
+                                 </property>
+                                </widget>
+                               </item>
+                               <item row="6" column="0">
+                                <widget class="QLineEdit" name="fuelamount"/>
+                               </item>
+                              </layout>
+                             </widget>
+                            </item>
+                            <item row="0" column="3">
+                             <spacer name="horizontalSpacer_10">
+                              <property name="orientation">
+                               <enum>Qt::Horizontal</enum>
+                              </property>
+                              <property name="sizeHint" stdset="0">
+                               <size>
+                                <width>40</width>
+                                <height>20</height>
+                               </size>
+                              </property>
+                             </spacer>
+                            </item>
+                           </layout>
+                          </widget>
+                         </item>
+                         <item row="1" column="0" rowspan="2">
+                          <widget class="QFrame" name="frame_107">
+                           <property name="frameShape">
+                            <enum>QFrame::StyledPanel</enum>
+                           </property>
+                           <property name="frameShadow">
+                            <enum>QFrame::Raised</enum>
+                           </property>
+                          </widget>
+                         </item>
+                         <item row="1" column="3" rowspan="3">
+                          <widget class="QFrame" name="frame_115">
+                           <property name="frameShape">
+                            <enum>QFrame::StyledPanel</enum>
+                           </property>
+                           <property name="frameShadow">
+                            <enum>QFrame::Raised</enum>
+                           </property>
+                          </widget>
+                         </item>
+                         <item row="2" column="2" rowspan="5">
+                          <widget class="QFrame" name="frame_105">
+                           <property name="frameShape">
+                            <enum>QFrame::StyledPanel</enum>
+                           </property>
+                           <property name="frameShadow">
+                            <enum>QFrame::Raised</enum>
+                           </property>
+                           <layout class="QGridLayout" name="gridLayout_93">
+                            <item row="0" column="0">
+                             <widget class="QTextEdit" name="deploymentdescription"/>
+                            </item>
+                           </layout>
+                          </widget>
+                         </item>
+                         <item row="3" column="0">
+                          <widget class="QFrame" name="frame_113">
+                           <property name="frameShape">
+                            <enum>QFrame::StyledPanel</enum>
+                           </property>
+                           <property name="frameShadow">
+                            <enum>QFrame::Raised</enum>
+                           </property>
+                          </widget>
+                         </item>
+                         <item row="3" column="1">
+                          <widget class="QFrame" name="frame_111">
+                           <property name="frameShape">
+                            <enum>QFrame::StyledPanel</enum>
+                           </property>
+                           <property name="frameShadow">
+                            <enum>QFrame::Raised</enum>
+                           </property>
+                           <layout class="QGridLayout" name="gridLayout_95">
+                            <item row="0" column="0">
+                             <widget class="QLabel" name="label_75">
+                              <property name="text">
+                               <string>Deployment Description</string>
+                              </property>
+                             </widget>
+                            </item>
+                           </layout>
+                          </widget>
+                         </item>
+                         <item row="4" column="1">
+                          <widget class="QFrame" name="frame_117">
+                           <property name="frameShape">
+                            <enum>QFrame::StyledPanel</enum>
+                           </property>
+                           <property name="frameShadow">
+                            <enum>QFrame::Raised</enum>
+                           </property>
+                          </widget>
+                         </item>
+                         <item row="5" column="1">
+                          <widget class="QFrame" name="frame_106">
+                           <property name="frameShape">
+                            <enum>QFrame::StyledPanel</enum>
+                           </property>
+                           <property name="frameShadow">
+                            <enum>QFrame::Raised</enum>
+                           </property>
+                          </widget>
+                         </item>
+                         <item row="6" column="1">
+                          <widget class="QFrame" name="frame_108">
+                           <property name="frameShape">
+                            <enum>QFrame::StyledPanel</enum>
+                           </property>
+                           <property name="frameShadow">
+                            <enum>QFrame::Raised</enum>
+                           </property>
+                          </widget>
+                         </item>
+                         <item row="6" column="3" rowspan="2">
+                          <widget class="QFrame" name="frame_114">
+                           <property name="frameShape">
+                            <enum>QFrame::StyledPanel</enum>
+                           </property>
+                           <property name="frameShadow">
+                            <enum>QFrame::Raised</enum>
+                           </property>
+                          </widget>
+                         </item>
+                         <item row="7" column="0">
+                          <widget class="QFrame" name="frame_109">
+                           <property name="frameShape">
+                            <enum>QFrame::StyledPanel</enum>
+                           </property>
+                           <property name="frameShadow">
+                            <enum>QFrame::Raised</enum>
+                           </property>
+                          </widget>
+                         </item>
+                         <item row="7" column="1">
+                          <widget class="QFrame" name="frame_116">
+                           <property name="frameShape">
+                            <enum>QFrame::StyledPanel</enum>
+                           </property>
+                           <property name="frameShadow">
+                            <enum>QFrame::Raised</enum>
+                           </property>
+                          </widget>
+                         </item>
+                         <item row="7" column="2">
+                          <widget class="QFrame" name="frame_110">
+                           <property name="frameShape">
+                            <enum>QFrame::StyledPanel</enum>
+                           </property>
+                           <property name="frameShadow">
+                            <enum>QFrame::Raised</enum>
+                           </property>
+                           <layout class="QGridLayout" name="gridLayout_94">
+                            <item row="0" column="0">
+                             <spacer name="horizontalSpacer_11">
+                              <property name="orientation">
+                               <enum>Qt::Horizontal</enum>
+                              </property>
+                              <property name="sizeHint" stdset="0">
+                               <size>
+                                <width>40</width>
+                                <height>20</height>
+                               </size>
+                              </property>
+                             </spacer>
+                            </item>
+                            <item row="0" column="1">
+                             <widget class="QPushButton" name="deploycarbutton">
+                              <property name="text">
+                               <string>Deploy Car</string>
+                              </property>
+                             </widget>
+                            </item>
+                            <item row="0" column="2">
+                             <spacer name="horizontalSpacer_12">
+                              <property name="orientation">
+                               <enum>Qt::Horizontal</enum>
+                              </property>
+                              <property name="sizeHint" stdset="0">
+                               <size>
+                                <width>40</width>
+                                <height>20</height>
+                               </size>
+                              </property>
+                             </spacer>
+                            </item>
+                           </layout>
+                          </widget>
+                         </item>
+                        </layout>
+                       </widget>
+                      </item>
+                     </layout>
+                    </widget>
+                    <widget class="QWidget" name="tab_15">
+                     <attribute name="title">
+                      <string>Return Car</string>
+                     </attribute>
+                     <layout class="QGridLayout" name="gridLayout_111">
+                      <item row="0" column="2">
+                       <spacer name="verticalSpacer_6">
+                        <property name="orientation">
+                         <enum>Qt::Vertical</enum>
+                        </property>
+                        <property name="sizeHint" stdset="0">
+                         <size>
+                          <width>20</width>
+                          <height>142</height>
+                         </size>
+                        </property>
+                       </spacer>
+                      </item>
+                      <item row="1" column="0">
+                       <spacer name="horizontalSpacer_7">
+                        <property name="orientation">
+                         <enum>Qt::Horizontal</enum>
+                        </property>
+                        <property name="sizeHint" stdset="0">
+                         <size>
+                          <width>161</width>
+                          <height>20</height>
+                         </size>
+                        </property>
+                       </spacer>
+                      </item>
+                      <item row="1" column="1" colspan="2">
+                       <widget class="QFrame" name="frame_22">
+                        <property name="frameShape">
+                         <enum>QFrame::StyledPanel</enum>
+                        </property>
+                        <property name="frameShadow">
+                         <enum>QFrame::Raised</enum>
+                        </property>
+                        <layout class="QGridLayout" name="gridLayout_110">
+                         <item row="0" column="0">
+                          <widget class="QFrame" name="frame_23">
+                           <property name="frameShape">
+                            <enum>QFrame::StyledPanel</enum>
+                           </property>
+                           <property name="frameShadow">
+                            <enum>QFrame::Raised</enum>
+                           </property>
+                           <layout class="QGridLayout" name="gridLayout_108">
+                            <item row="0" column="0">
+                             <widget class="QLabel" name="label_90">
+                              <property name="text">
+                               <string>Licence Number</string>
+                              </property>
+                             </widget>
+                            </item>
+                           </layout>
+                          </widget>
+                         </item>
+                         <item row="1" column="0">
+                          <spacer name="horizontalSpacer_5">
+                           <property name="orientation">
+                            <enum>Qt::Horizontal</enum>
+                           </property>
+                           <property name="sizeHint" stdset="0">
+                            <size>
+                             <width>40</width>
+                             <height>20</height>
+                            </size>
+                           </property>
+                          </spacer>
+                         </item>
+                         <item row="1" column="1">
+                          <widget class="QPushButton" name="pushButton_2">
+                           <property name="text">
+                            <string>Return Car</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item row="1" column="2">
+                          <spacer name="horizontalSpacer_6">
+                           <property name="orientation">
+                            <enum>Qt::Horizontal</enum>
+                           </property>
+                           <property name="sizeHint" stdset="0">
+                            <size>
+                             <width>40</width>
+                             <height>20</height>
+                            </size>
+                           </property>
+                          </spacer>
+                         </item>
+                         <item row="0" column="1" colspan="2">
+                          <widget class="QFrame" name="frame_28">
+                           <property name="frameShape">
+                            <enum>QFrame::StyledPanel</enum>
+                           </property>
+                           <property name="frameShadow">
+                            <enum>QFrame::Raised</enum>
+                           </property>
+                           <layout class="QGridLayout" name="gridLayout_109">
+                            <item row="0" column="0">
+                             <widget class="QLineEdit" name="returnlicense"/>
+                            </item>
+                           </layout>
+                          </widget>
+                         </item>
+                        </layout>
+                       </widget>
+                      </item>
+                      <item row="1" column="3">
+                       <spacer name="horizontalSpacer_8">
+                        <property name="orientation">
+                         <enum>Qt::Horizontal</enum>
+                        </property>
+                        <property name="sizeHint" stdset="0">
+                         <size>
+                          <width>332</width>
+                          <height>20</height>
+                         </size>
+                        </property>
+                       </spacer>
+                      </item>
+                      <item row="2" column="1">
+                       <spacer name="verticalSpacer_5">
+                        <property name="orientation">
+                         <enum>Qt::Vertical</enum>
+                        </property>
+                        <property name="sizeHint" stdset="0">
+                         <size>
+                          <width>20</width>
+                          <height>213</height>
+                         </size>
+                        </property>
+                       </spacer>
                       </item>
                      </layout>
                     </widget>
@@ -1416,7 +1940,7 @@ QMainWindow{background-color:#fffafa;}
                <item row="0" column="0">
                 <widget class="QTabWidget" name="driverwidget">
                  <property name="currentIndex">
-                  <number>1</number>
+                  <number>0</number>
                  </property>
                  <widget class="QWidget" name="tab_4">
                   <attribute name="title">
@@ -1778,7 +2302,7 @@ QMainWindow{background-color:#fffafa;}
                <item row="0" column="0">
                 <widget class="QTabWidget" name="tabWidget">
                  <property name="currentIndex">
-                  <number>1</number>
+                  <number>0</number>
                  </property>
                  <widget class="QWidget" name="tab_7">
                   <attribute name="title">
@@ -2138,19 +2662,19 @@ QMainWindow{background-color:#fffafa;}
                  </widget>
                  <widget class="QWidget" name="tab_8">
                   <attribute name="title">
-                   <string>View Previous Accidents</string>
+                   <string>View Accidents</string>
                   </attribute>
                   <layout class="QGridLayout" name="gridLayout_65">
                    <item row="0" column="0">
                     <widget class="QTableWidget" name="accidentable">
                      <column>
                       <property name="text">
-                       <string>Licence Number</string>
+                       <string>License Number</string>
                       </property>
                      </column>
                      <column>
                       <property name="text">
-                       <string>Driver</string>
+                       <string>Driver ID</string>
                       </property>
                      </column>
                      <column>
@@ -2527,7 +3051,7 @@ QMainWindow{background-color:#fffafa;}
                  </widget>
                  <widget class="QWidget" name="tab_10">
                   <attribute name="title">
-                   <string>View Previous Repair or Service Details</string>
+                   <string>View Service Details</string>
                   </attribute>
                   <layout class="QGridLayout" name="gridLayout_78">
                    <item row="0" column="0">
@@ -2542,17 +3066,12 @@ QMainWindow{background-color:#fffafa;}
                      </column>
                      <column>
                       <property name="text">
+                       <string>License Number</string>
+                      </property>
+                     </column>
+                     <column>
+                      <property name="text">
                        <string>Driver ID</string>
-                      </property>
-                     </column>
-                     <column>
-                      <property name="text">
-                       <string>Car Licence Number</string>
-                      </property>
-                     </column>
-                     <column>
-                      <property name="text">
-                       <string>Type of Service</string>
                       </property>
                      </column>
                      <column>
@@ -2581,7 +3100,7 @@ QMainWindow{background-color:#fffafa;}
                  </widget>
                  <widget class="QWidget" name="tab_5">
                   <attribute name="title">
-                   <string>View Previous Repair Details</string>
+                   <string>View Repair Details</string>
                   </attribute>
                   <layout class="QGridLayout" name="gridLayout_106">
                    <item row="0" column="0">
@@ -2596,17 +3115,12 @@ QMainWindow{background-color:#fffafa;}
                      </column>
                      <column>
                       <property name="text">
+                       <string>License Number</string>
+                      </property>
+                     </column>
+                     <column>
+                      <property name="text">
                        <string>Driver ID</string>
-                      </property>
-                     </column>
-                     <column>
-                      <property name="text">
-                       <string>Car Licence Number</string>
-                      </property>
-                     </column>
-                     <column>
-                      <property name="text">
-                       <string>Type of Service</string>
                       </property>
                      </column>
                      <column>
@@ -2919,7 +3433,7 @@ QMainWindow{background-color:#fffafa;}
                <item row="0" column="0">
                 <widget class="QTabWidget" name="reporting">
                  <property name="tabShape">
-                  <enum>QTabWidget::Triangular</enum>
+                  <enum>QTabWidget::Rounded</enum>
                  </property>
                  <property name="currentIndex">
                   <number>0</number>
@@ -2930,7 +3444,43 @@ QMainWindow{background-color:#fffafa;}
                   </attribute>
                   <layout class="QHBoxLayout" name="horizontalLayout_8">
                    <item>
-                    <widget class="QTableWidget" name="carsreporttable"/>
+                    <widget class="QTableWidget" name="carsreporttable">
+                     <column>
+                      <property name="text">
+                       <string>License Number</string>
+                      </property>
+                     </column>
+                     <column>
+                      <property name="text">
+                       <string>Deployments</string>
+                      </property>
+                     </column>
+                     <column>
+                      <property name="text">
+                       <string>Fuel Consumed</string>
+                      </property>
+                     </column>
+                     <column>
+                      <property name="text">
+                       <string>Mileage</string>
+                      </property>
+                     </column>
+                     <column>
+                      <property name="text">
+                       <string>Service</string>
+                      </property>
+                     </column>
+                     <column>
+                      <property name="text">
+                       <string>Repairs</string>
+                      </property>
+                     </column>
+                     <column>
+                      <property name="text">
+                       <string>Accidents</string>
+                      </property>
+                     </column>
+                    </widget>
                    </item>
                   </layout>
                  </widget>
@@ -2940,47 +3490,354 @@ QMainWindow{background-color:#fffafa;}
                   </attribute>
                   <layout class="QHBoxLayout" name="horizontalLayout_9">
                    <item>
-                    <widget class="QTableWidget" name="driverreporttable"/>
+                    <widget class="QTableWidget" name="driverreporttable">
+                     <column>
+                      <property name="text">
+                       <string>Drive ID</string>
+                      </property>
+                     </column>
+                     <column>
+                      <property name="text">
+                       <string>First name</string>
+                      </property>
+                     </column>
+                     <column>
+                      <property name="text">
+                       <string>Second name</string>
+                      </property>
+                     </column>
+                     <column>
+                      <property name="text">
+                       <string>Deployments</string>
+                      </property>
+                     </column>
+                     <column>
+                      <property name="text">
+                       <string>Fuel used</string>
+                      </property>
+                     </column>
+                     <column>
+                      <property name="text">
+                       <string>Service</string>
+                      </property>
+                     </column>
+                     <column>
+                      <property name="text">
+                       <string>Accidents</string>
+                      </property>
+                     </column>
+                    </widget>
                    </item>
                   </layout>
                  </widget>
-                 <widget class="QWidget" name="deploymentreportstab">
+                 <widget class="QWidget" name="tab_16">
                   <attribute name="title">
-                   <string>Deployment Reports</string>
+                   <string>General Report</string>
                   </attribute>
-                  <layout class="QHBoxLayout" name="horizontalLayout_10">
-                   <item>
-                    <widget class="QTableWidget" name="deploymentreporttable"/>
-                   </item>
-                  </layout>
-                 </widget>
-                 <widget class="QWidget" name="servicereportstab">
-                  <attribute name="title">
-                   <string>Service Reports</string>
-                  </attribute>
-                  <layout class="QHBoxLayout" name="horizontalLayout_11">
-                   <item>
-                    <widget class="QTableWidget" name="servicereporttable"/>
-                   </item>
-                  </layout>
-                 </widget>
-                 <widget class="QWidget" name="repairreportstab">
-                  <attribute name="title">
-                   <string>Repair Reports</string>
-                  </attribute>
-                  <layout class="QHBoxLayout" name="horizontalLayout_12">
-                   <item>
-                    <widget class="QTableWidget" name="repairreporttable"/>
-                   </item>
-                  </layout>
-                 </widget>
-                 <widget class="QWidget" name="uncertainitiesreportstab">
-                  <attribute name="title">
-                   <string>Uncertainity Reports</string>
-                  </attribute>
-                  <layout class="QHBoxLayout" name="horizontalLayout_13">
-                   <item>
-                    <widget class="QTableWidget" name="accidentsreporttable"/>
+                  <layout class="QGridLayout" name="gridLayout_2">
+                   <item row="0" column="0">
+                    <widget class="QFrame" name="frame_2">
+                     <property name="frameShape">
+                      <enum>QFrame::StyledPanel</enum>
+                     </property>
+                     <property name="frameShadow">
+                      <enum>QFrame::Raised</enum>
+                     </property>
+                     <layout class="QGridLayout" name="gridLayout_118">
+                      <item row="0" column="0">
+                       <widget class="QFrame" name="frame_130">
+                        <property name="frameShape">
+                         <enum>QFrame::StyledPanel</enum>
+                        </property>
+                        <property name="frameShadow">
+                         <enum>QFrame::Raised</enum>
+                        </property>
+                        <layout class="QGridLayout" name="gridLayout_114">
+                         <item row="0" column="0">
+                          <widget class="QFrame" name="frame_29">
+                           <property name="frameShape">
+                            <enum>QFrame::StyledPanel</enum>
+                           </property>
+                           <property name="frameShadow">
+                            <enum>QFrame::Raised</enum>
+                           </property>
+                           <layout class="QGridLayout" name="gridLayout_113">
+                            <item row="0" column="0">
+                             <widget class="QLabel" name="label_92">
+                              <property name="text">
+                               <string>Number of cars</string>
+                              </property>
+                             </widget>
+                            </item>
+                            <item row="1" column="0">
+                             <widget class="QLabel" name="label_93">
+                              <property name="text">
+                               <string>Number of drivers</string>
+                              </property>
+                             </widget>
+                            </item>
+                            <item row="9" column="0">
+                             <widget class="QLabel" name="label_101">
+                              <property name="text">
+                               <string>Number of repairs</string>
+                              </property>
+                             </widget>
+                            </item>
+                            <item row="8" column="0">
+                             <widget class="QLabel" name="label_100">
+                              <property name="text">
+                               <string>Fuel user per driver</string>
+                              </property>
+                             </widget>
+                            </item>
+                            <item row="6" column="0">
+                             <widget class="QLabel" name="label_98">
+                              <property name="text">
+                               <string>Fuel usage per car</string>
+                              </property>
+                             </widget>
+                            </item>
+                            <item row="4" column="0">
+                             <widget class="QLabel" name="label_96">
+                              <property name="text">
+                               <string>NUmber of deployments per driver</string>
+                              </property>
+                             </widget>
+                            </item>
+                            <item row="3" column="0">
+                             <widget class="QLabel" name="label_95">
+                              <property name="text">
+                               <string>Number of deployments per car</string>
+                              </property>
+                             </widget>
+                            </item>
+                            <item row="5" column="0">
+                             <widget class="QLabel" name="label_97">
+                              <property name="text">
+                               <string>Fuel usage</string>
+                              </property>
+                             </widget>
+                            </item>
+                            <item row="2" column="0">
+                             <widget class="QLabel" name="label_94">
+                              <property name="text">
+                               <string>Number of deployments</string>
+                              </property>
+                             </widget>
+                            </item>
+                            <item row="7" column="0">
+                             <widget class="QLabel" name="label_99">
+                              <property name="text">
+                               <string>Fuel user per deployment</string>
+                              </property>
+                             </widget>
+                            </item>
+                            <item row="10" column="0">
+                             <widget class="QLabel" name="label_102">
+                              <property name="text">
+                               <string>Number of repairs per car</string>
+                              </property>
+                             </widget>
+                            </item>
+                           </layout>
+                          </widget>
+                         </item>
+                         <item row="0" column="1">
+                          <widget class="QFrame" name="frame_131">
+                           <property name="frameShape">
+                            <enum>QFrame::StyledPanel</enum>
+                           </property>
+                           <property name="frameShadow">
+                            <enum>QFrame::Raised</enum>
+                           </property>
+                           <layout class="QGridLayout" name="gridLayout_98">
+                            <item row="5" column="0">
+                             <widget class="QLineEdit" name="numfuel"/>
+                            </item>
+                            <item row="9" column="0">
+                             <widget class="QLineEdit" name="numrepair"/>
+                            </item>
+                            <item row="1" column="0">
+                             <widget class="QLineEdit" name="numdrivers"/>
+                            </item>
+                            <item row="6" column="0">
+                             <widget class="QLineEdit" name="numfpcar"/>
+                            </item>
+                            <item row="0" column="0">
+                             <widget class="QLineEdit" name="numcars"/>
+                            </item>
+                            <item row="2" column="0">
+                             <widget class="QLineEdit" name="numdeployments"/>
+                            </item>
+                            <item row="7" column="0">
+                             <widget class="QLineEdit" name="numfpdeploment"/>
+                            </item>
+                            <item row="4" column="0">
+                             <widget class="QLineEdit" name="numdpdriver"/>
+                            </item>
+                            <item row="3" column="0">
+                             <widget class="QLineEdit" name="numdpcar"/>
+                            </item>
+                            <item row="8" column="0">
+                             <widget class="QLineEdit" name="numfpdriver"/>
+                            </item>
+                            <item row="10" column="0">
+                             <widget class="QLineEdit" name="numrpcar"/>
+                            </item>
+                           </layout>
+                          </widget>
+                         </item>
+                        </layout>
+                       </widget>
+                      </item>
+                      <item row="0" column="1">
+                       <widget class="QFrame" name="frame_132">
+                        <property name="frameShape">
+                         <enum>QFrame::StyledPanel</enum>
+                        </property>
+                        <property name="frameShadow">
+                         <enum>QFrame::Raised</enum>
+                        </property>
+                        <layout class="QGridLayout" name="gridLayout_117">
+                         <item row="0" column="0">
+                          <widget class="QFrame" name="frame_133">
+                           <property name="frameShape">
+                            <enum>QFrame::StyledPanel</enum>
+                           </property>
+                           <property name="frameShadow">
+                            <enum>QFrame::Raised</enum>
+                           </property>
+                           <layout class="QGridLayout" name="gridLayout_115">
+                            <item row="2" column="0">
+                             <widget class="QLabel" name="label_103">
+                              <property name="text">
+                               <string>Number of repairs driver</string>
+                              </property>
+                             </widget>
+                            </item>
+                            <item row="4" column="0">
+                             <widget class="QLabel" name="label_105">
+                              <property name="text">
+                               <string>Number of service</string>
+                              </property>
+                             </widget>
+                            </item>
+                            <item row="6" column="0">
+                             <widget class="QLabel" name="label_107">
+                              <property name="text">
+                               <string>Number of service per driver</string>
+                              </property>
+                             </widget>
+                            </item>
+                            <item row="3" column="0">
+                             <widget class="QLabel" name="label_104">
+                              <property name="text">
+                               <string>Number of repair per deployment</string>
+                              </property>
+                             </widget>
+                            </item>
+                            <item row="11" column="0">
+                             <widget class="QLabel" name="label_111">
+                              <property name="text">
+                               <string>Number of accidents per deployment</string>
+                              </property>
+                             </widget>
+                            </item>
+                            <item row="7" column="0">
+                             <widget class="QLabel" name="label_108">
+                              <property name="text">
+                               <string>Number of service per deployment</string>
+                              </property>
+                             </widget>
+                            </item>
+                            <item row="5" column="0">
+                             <widget class="QLabel" name="label_106">
+                              <property name="text">
+                               <string>Number of service per car</string>
+                              </property>
+                             </widget>
+                            </item>
+                            <item row="8" column="0">
+                             <widget class="QLabel" name="label_109">
+                              <property name="text">
+                               <string>Number of Accidents</string>
+                              </property>
+                             </widget>
+                            </item>
+                            <item row="9" column="0">
+                             <widget class="QLabel" name="label_110">
+                              <property name="text">
+                               <string>Number of Accident per car</string>
+                              </property>
+                             </widget>
+                            </item>
+                            <item row="10" column="0">
+                             <widget class="QLabel" name="label_112">
+                              <property name="text">
+                               <string>Number of accidents per driver</string>
+                              </property>
+                             </widget>
+                            </item>
+                            <item row="12" column="0">
+                             <widget class="QLabel" name="label_113">
+                              <property name="text">
+                               <string>Number of cars removed</string>
+                              </property>
+                             </widget>
+                            </item>
+                           </layout>
+                          </widget>
+                         </item>
+                         <item row="0" column="1">
+                          <widget class="QFrame" name="frame_134">
+                           <property name="frameShape">
+                            <enum>QFrame::StyledPanel</enum>
+                           </property>
+                           <property name="frameShadow">
+                            <enum>QFrame::Raised</enum>
+                           </property>
+                           <layout class="QGridLayout" name="gridLayout_116">
+                            <item row="0" column="0">
+                             <widget class="QLineEdit" name="numrpdriver"/>
+                            </item>
+                            <item row="1" column="0">
+                             <widget class="QLineEdit" name="numrpdeployment"/>
+                            </item>
+                            <item row="2" column="0">
+                             <widget class="QLineEdit" name="numservice"/>
+                            </item>
+                            <item row="3" column="0">
+                             <widget class="QLineEdit" name="numspcar"/>
+                            </item>
+                            <item row="4" column="0">
+                             <widget class="QLineEdit" name="numspdriver"/>
+                            </item>
+                            <item row="5" column="0">
+                             <widget class="QLineEdit" name="numspdeployment"/>
+                            </item>
+                            <item row="6" column="0">
+                             <widget class="QLineEdit" name="numaccidents"/>
+                            </item>
+                            <item row="7" column="0">
+                             <widget class="QLineEdit" name="numapcar"/>
+                            </item>
+                            <item row="8" column="0">
+                             <widget class="QLineEdit" name="numapdriver"/>
+                            </item>
+                            <item row="9" column="0">
+                             <widget class="QLineEdit" name="numapdeployment"/>
+                            </item>
+                            <item row="10" column="0">
+                             <widget class="QLineEdit" name="numremoved"/>
+                            </item>
+                           </layout>
+                          </widget>
+                         </item>
+                        </layout>
+                       </widget>
+                      </item>
+                     </layout>
+                    </widget>
                    </item>
                   </layout>
                  </widget>
@@ -2999,309 +3856,7 @@ QMainWindow{background-color:#fffafa;}
                   <attribute name="title">
                    <string>Deploy Car</string>
                   </attribute>
-                  <layout class="QHBoxLayout" name="horizontalLayout">
-                   <item>
-                    <widget class="QFrame" name="frame_101">
-                     <property name="frameShape">
-                      <enum>QFrame::StyledPanel</enum>
-                     </property>
-                     <property name="frameShadow">
-                      <enum>QFrame::Raised</enum>
-                     </property>
-                     <layout class="QGridLayout" name="gridLayout_89">
-                      <item row="1" column="1" colspan="3">
-                       <widget class="QFrame" name="frame_102">
-                        <property name="frameShape">
-                         <enum>QFrame::StyledPanel</enum>
-                        </property>
-                        <property name="frameShadow">
-                         <enum>QFrame::Raised</enum>
-                        </property>
-                        <layout class="QGridLayout" name="gridLayout_90">
-                         <item row="0" column="0">
-                          <widget class="QFrame" name="frame_103">
-                           <property name="frameShape">
-                            <enum>QFrame::StyledPanel</enum>
-                           </property>
-                           <property name="frameShadow">
-                            <enum>QFrame::Raised</enum>
-                           </property>
-                           <layout class="QGridLayout" name="gridLayout_91">
-                            <item row="3" column="0">
-                             <widget class="QLabel" name="label_69">
-                              <property name="text">
-                               <string>Drive Number</string>
-                              </property>
-                             </widget>
-                            </item>
-                            <item row="8" column="0">
-                             <widget class="QLabel" name="label_70">
-                              <property name="text">
-                               <string>Fuel Card Number</string>
-                              </property>
-                             </widget>
-                            </item>
-                            <item row="6" column="0">
-                             <widget class="QLabel" name="label_71">
-                              <property name="text">
-                               <string>Destination</string>
-                              </property>
-                             </widget>
-                            </item>
-                            <item row="5" column="0">
-                             <widget class="QLabel" name="label_72">
-                              <property name="text">
-                               <string>Origin</string>
-                              </property>
-                             </widget>
-                            </item>
-                            <item row="2" column="0">
-                             <widget class="QLabel" name="label_74">
-                              <property name="text">
-                               <string>Car Number</string>
-                              </property>
-                             </widget>
-                            </item>
-                            <item row="7" column="0">
-                             <widget class="QLabel" name="label_89">
-                              <property name="text">
-                               <string>Return Time</string>
-                              </property>
-                             </widget>
-                            </item>
-                           </layout>
-                          </widget>
-                         </item>
-                         <item row="0" column="1">
-                          <widget class="QFrame" name="frame_104">
-                           <property name="frameShape">
-                            <enum>QFrame::StyledPanel</enum>
-                           </property>
-                           <property name="frameShadow">
-                            <enum>QFrame::Raised</enum>
-                           </property>
-                           <layout class="QGridLayout" name="gridLayout_92">
-                            <item row="0" column="0">
-                             <widget class="QLineEdit" name="licensenumber_2"/>
-                            </item>
-                            <item row="1" column="0">
-                             <widget class="QLineEdit" name="driverid_2"/>
-                            </item>
-                            <item row="2" column="0">
-                             <widget class="QLineEdit" name="origin"/>
-                            </item>
-                            <item row="3" column="0">
-                             <widget class="QLineEdit" name="destination"/>
-                            </item>
-                            <item row="5" column="0">
-                             <widget class="QLineEdit" name="fuelcardnumber"/>
-                            </item>
-                            <item row="4" column="0">
-                             <widget class="QDateEdit" name="returntime">
-                              <property name="dateTime">
-                               <datetime>
-                                <hour>0</hour>
-                                <minute>0</minute>
-                                <second>0</second>
-                                <year>2017</year>
-                                <month>1</month>
-                                <day>1</day>
-                               </datetime>
-                              </property>
-                             </widget>
-                            </item>
-                           </layout>
-                          </widget>
-                         </item>
-                        </layout>
-                       </widget>
-                      </item>
-                      <item row="2" column="2" rowspan="5" colspan="2">
-                       <widget class="QFrame" name="frame_105">
-                        <property name="frameShape">
-                         <enum>QFrame::StyledPanel</enum>
-                        </property>
-                        <property name="frameShadow">
-                         <enum>QFrame::Raised</enum>
-                        </property>
-                        <layout class="QGridLayout" name="gridLayout_93">
-                         <item row="0" column="0">
-                          <widget class="QTextEdit" name="deploymentdescription"/>
-                         </item>
-                        </layout>
-                       </widget>
-                      </item>
-                      <item row="5" column="1">
-                       <widget class="QFrame" name="frame_106">
-                        <property name="frameShape">
-                         <enum>QFrame::StyledPanel</enum>
-                        </property>
-                        <property name="frameShadow">
-                         <enum>QFrame::Raised</enum>
-                        </property>
-                       </widget>
-                      </item>
-                      <item row="1" column="0" rowspan="2">
-                       <widget class="QFrame" name="frame_107">
-                        <property name="frameShape">
-                         <enum>QFrame::StyledPanel</enum>
-                        </property>
-                        <property name="frameShadow">
-                         <enum>QFrame::Raised</enum>
-                        </property>
-                       </widget>
-                      </item>
-                      <item row="6" column="1">
-                       <widget class="QFrame" name="frame_108">
-                        <property name="frameShape">
-                         <enum>QFrame::StyledPanel</enum>
-                        </property>
-                        <property name="frameShadow">
-                         <enum>QFrame::Raised</enum>
-                        </property>
-                       </widget>
-                      </item>
-                      <item row="7" column="0">
-                       <widget class="QFrame" name="frame_109">
-                        <property name="frameShape">
-                         <enum>QFrame::StyledPanel</enum>
-                        </property>
-                        <property name="frameShadow">
-                         <enum>QFrame::Raised</enum>
-                        </property>
-                       </widget>
-                      </item>
-                      <item row="7" column="2">
-                       <widget class="QFrame" name="frame_110">
-                        <property name="frameShape">
-                         <enum>QFrame::StyledPanel</enum>
-                        </property>
-                        <property name="frameShadow">
-                         <enum>QFrame::Raised</enum>
-                        </property>
-                        <layout class="QGridLayout" name="gridLayout_94">
-                         <item row="0" column="0">
-                          <widget class="QPushButton" name="deploycarbutton">
-                           <property name="text">
-                            <string>Deploy Car</string>
-                           </property>
-                          </widget>
-                         </item>
-                        </layout>
-                       </widget>
-                      </item>
-                      <item row="3" column="1" alignment="Qt::AlignTop">
-                       <widget class="QFrame" name="frame_111">
-                        <property name="frameShape">
-                         <enum>QFrame::StyledPanel</enum>
-                        </property>
-                        <property name="frameShadow">
-                         <enum>QFrame::Raised</enum>
-                        </property>
-                        <layout class="QGridLayout" name="gridLayout_95">
-                         <item row="0" column="0">
-                          <widget class="QLabel" name="label_75">
-                           <property name="text">
-                            <string>Deployment Description</string>
-                           </property>
-                          </widget>
-                         </item>
-                        </layout>
-                       </widget>
-                      </item>
-                      <item row="0" column="0" colspan="5">
-                       <widget class="QFrame" name="frame_112">
-                        <property name="frameShape">
-                         <enum>QFrame::StyledPanel</enum>
-                        </property>
-                        <property name="frameShadow">
-                         <enum>QFrame::Raised</enum>
-                        </property>
-                        <layout class="QGridLayout" name="gridLayout_107">
-                         <item row="0" column="0">
-                          <widget class="QPushButton" name="backtocars">
-                           <property name="styleSheet">
-                            <string notr="true">width:20px; height:20px; border:0px; border-radius:4px;</string>
-                           </property>
-                           <property name="text">
-                            <string/>
-                           </property>
-                           <property name="icon">
-                            <iconset resource="icons.qrc">
-                             <normaloff>:/icons/icons/backto.png</normaloff>:/icons/icons/backto.png</iconset>
-                           </property>
-                          </widget>
-                         </item>
-                         <item row="0" column="1">
-                          <spacer name="horizontalSpacer_5">
-                           <property name="orientation">
-                            <enum>Qt::Horizontal</enum>
-                           </property>
-                           <property name="sizeHint" stdset="0">
-                            <size>
-                             <width>40</width>
-                             <height>20</height>
-                            </size>
-                           </property>
-                          </spacer>
-                         </item>
-                        </layout>
-                       </widget>
-                      </item>
-                      <item row="3" column="0">
-                       <widget class="QFrame" name="frame_113">
-                        <property name="frameShape">
-                         <enum>QFrame::StyledPanel</enum>
-                        </property>
-                        <property name="frameShadow">
-                         <enum>QFrame::Raised</enum>
-                        </property>
-                       </widget>
-                      </item>
-                      <item row="6" column="4" rowspan="2">
-                       <widget class="QFrame" name="frame_114">
-                        <property name="frameShape">
-                         <enum>QFrame::StyledPanel</enum>
-                        </property>
-                        <property name="frameShadow">
-                         <enum>QFrame::Raised</enum>
-                        </property>
-                       </widget>
-                      </item>
-                      <item row="1" column="4" rowspan="3">
-                       <widget class="QFrame" name="frame_115">
-                        <property name="frameShape">
-                         <enum>QFrame::StyledPanel</enum>
-                        </property>
-                        <property name="frameShadow">
-                         <enum>QFrame::Raised</enum>
-                        </property>
-                       </widget>
-                      </item>
-                      <item row="7" column="1">
-                       <widget class="QFrame" name="frame_116">
-                        <property name="frameShape">
-                         <enum>QFrame::StyledPanel</enum>
-                        </property>
-                        <property name="frameShadow">
-                         <enum>QFrame::Raised</enum>
-                        </property>
-                       </widget>
-                      </item>
-                      <item row="4" column="1">
-                       <widget class="QFrame" name="frame_117">
-                        <property name="frameShape">
-                         <enum>QFrame::StyledPanel</enum>
-                        </property>
-                        <property name="frameShadow">
-                         <enum>QFrame::Raised</enum>
-                        </property>
-                       </widget>
-                      </item>
-                     </layout>
-                    </widget>
-                   </item>
-                  </layout>
+                  <layout class="QHBoxLayout" name="horizontalLayout"/>
                  </widget>
                 </widget>
                </item>
@@ -3353,209 +3908,264 @@ QMainWindow{background-color:#fffafa;}
                      <property name="frameShadow">
                       <enum>QFrame::Raised</enum>
                      </property>
-                     <layout class="QGridLayout" name="gridLayout_98">
-                      <item row="0" column="0">
-                       <widget class="QFrame" name="userimageframe_2">
-                        <property name="frameShape">
-                         <enum>QFrame::StyledPanel</enum>
-                        </property>
-                        <property name="frameShadow">
-                         <enum>QFrame::Raised</enum>
-                        </property>
-                        <layout class="QGridLayout" name="gridLayout_99">
-                         <item row="0" column="0">
-                          <widget class="QFrame" name="frame_121">
-                           <property name="frameShape">
-                            <enum>QFrame::StyledPanel</enum>
-                           </property>
-                           <property name="frameShadow">
-                            <enum>QFrame::Raised</enum>
-                           </property>
-                          </widget>
-                         </item>
-                         <item row="0" column="1">
-                          <widget class="QFrame" name="frame_122">
-                           <property name="frameShape">
-                            <enum>QFrame::StyledPanel</enum>
-                           </property>
-                           <property name="frameShadow">
-                            <enum>QFrame::Raised</enum>
-                           </property>
-                          </widget>
-                         </item>
-                        </layout>
-                       </widget>
-                      </item>
-                      <item row="0" column="1" rowspan="2">
-                       <widget class="QFrame" name="frame_123">
-                        <property name="frameShape">
-                         <enum>QFrame::StyledPanel</enum>
-                        </property>
-                        <property name="frameShadow">
-                         <enum>QFrame::Raised</enum>
-                        </property>
-                        <layout class="QGridLayout" name="gridLayout_100">
-                         <item row="0" column="0">
-                          <widget class="QFrame" name="frame_124">
-                           <property name="frameShape">
-                            <enum>QFrame::StyledPanel</enum>
-                           </property>
-                           <property name="frameShadow">
-                            <enum>QFrame::Raised</enum>
-                           </property>
-                           <layout class="QGridLayout" name="gridLayout_101">
-                            <item row="6" column="0">
-                             <widget class="QLabel" name="label_76">
-                              <property name="text">
-                               <string>Sex</string>
-                              </property>
-                             </widget>
-                            </item>
-                            <item row="7" column="0">
-                             <widget class="QLabel" name="label_77">
-                              <property name="text">
-                               <string>Date Added</string>
-                              </property>
-                             </widget>
-                            </item>
-                            <item row="0" column="0">
-                             <widget class="QLabel" name="label_78">
-                              <property name="text">
-                               <string>First Name</string>
-                              </property>
-                             </widget>
-                            </item>
-                            <item row="3" column="0">
-                             <widget class="QLabel" name="label_79">
-                              <property name="text">
-                               <string>Driver ID</string>
-                              </property>
-                             </widget>
-                            </item>
-                            <item row="5" column="0">
-                             <widget class="QLabel" name="label_80">
-                              <property name="text">
-                               <string>Date of Birth</string>
-                              </property>
-                             </widget>
-                            </item>
-                            <item row="1" column="0">
-                             <widget class="QLabel" name="label_81">
-                              <property name="text">
-                               <string>Last Name</string>
-                              </property>
-                             </widget>
-                            </item>
-                            <item row="4" column="0">
-                             <widget class="QLabel" name="label_82">
-                              <property name="text">
-                               <string>Age</string>
-                              </property>
-                             </widget>
-                            </item>
-                            <item row="2" column="0">
-                             <widget class="QLabel" name="label_83">
-                              <property name="text">
-                               <string>Email</string>
-                              </property>
-                             </widget>
-                            </item>
-                           </layout>
-                          </widget>
-                         </item>
-                         <item row="0" column="1">
-                          <widget class="QFrame" name="frame_125">
-                           <property name="frameShape">
-                            <enum>QFrame::StyledPanel</enum>
-                           </property>
-                           <property name="frameShadow">
-                            <enum>QFrame::Raised</enum>
-                           </property>
-                           <layout class="QGridLayout" name="gridLayout_102">
-                            <item row="3" column="0">
-                             <widget class="QLineEdit" name="driveriddisplay"/>
-                            </item>
-                            <item row="1" column="0">
-                             <widget class="QLineEdit" name="driverlndisplay"/>
-                            </item>
-                            <item row="6" column="0">
-                             <widget class="QLineEdit" name="driversexdisplay"/>
-                            </item>
-                            <item row="0" column="0">
-                             <widget class="QLineEdit" name="driverfndisplay"/>
-                            </item>
-                            <item row="4" column="0">
-                             <widget class="QLineEdit" name="driveragedisplay"/>
-                            </item>
-                            <item row="7" column="0">
-                             <widget class="QLineEdit" name="driverdateddisplay"/>
-                            </item>
-                            <item row="5" column="0">
-                             <widget class="QLineEdit" name="driverdobdisplay"/>
-                            </item>
-                            <item row="2" column="0">
-                             <widget class="QLineEdit" name="driveremaildisplay"/>
-                            </item>
-                           </layout>
-                          </widget>
-                         </item>
-                        </layout>
-                       </widget>
-                      </item>
-                      <item row="1" column="0">
-                       <widget class="QFrame" name="frame_126">
-                        <property name="frameShape">
-                         <enum>QFrame::StyledPanel</enum>
-                        </property>
-                        <property name="frameShadow">
-                         <enum>QFrame::Raised</enum>
-                        </property>
-                        <layout class="QGridLayout" name="gridLayout_103">
-                         <item row="1" column="1">
-                          <widget class="QLineEdit" name="permitnumberdisplay"/>
-                         </item>
-                         <item row="3" column="1">
-                          <widget class="QPushButton" name="editdriverdetails">
-                           <property name="text">
-                            <string>Edit Driver Details</string>
-                           </property>
-                          </widget>
-                         </item>
-                         <item row="2" column="0">
-                          <widget class="QLabel" name="label_84">
-                           <property name="text">
-                            <string>Permit Class</string>
-                           </property>
-                          </widget>
-                         </item>
-                         <item row="2" column="1">
-                          <widget class="QLineEdit" name="permitclassdisplay">
-                           <property name="readOnly">
-                            <bool>true</bool>
-                           </property>
-                          </widget>
-                         </item>
-                         <item row="1" column="0">
-                          <widget class="QLabel" name="label_85">
-                           <property name="text">
-                            <string>Permit Number</string>
-                           </property>
-                          </widget>
-                         </item>
-                         <item row="0" column="1">
-                          <widget class="QLineEdit" name="drivercurrentstatus"/>
-                         </item>
-                         <item row="0" column="0">
-                          <widget class="QLabel" name="label_86">
-                           <property name="text">
-                            <string>Current Status</string>
-                           </property>
-                          </widget>
-                         </item>
-                        </layout>
-                       </widget>
-                      </item>
-                     </layout>
+                     <widget class="QFrame" name="userimageframe_2">
+                      <property name="geometry">
+                       <rect>
+                        <x>10</x>
+                        <y>10</y>
+                        <width>46</width>
+                        <height>30</height>
+                       </rect>
+                      </property>
+                      <property name="frameShape">
+                       <enum>QFrame::StyledPanel</enum>
+                      </property>
+                      <property name="frameShadow">
+                       <enum>QFrame::Raised</enum>
+                      </property>
+                      <layout class="QGridLayout" name="gridLayout_99">
+                       <item row="0" column="0">
+                        <widget class="QFrame" name="frame_121">
+                         <property name="frameShape">
+                          <enum>QFrame::StyledPanel</enum>
+                         </property>
+                         <property name="frameShadow">
+                          <enum>QFrame::Raised</enum>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="0" column="1">
+                        <widget class="QFrame" name="frame_122">
+                         <property name="frameShape">
+                          <enum>QFrame::StyledPanel</enum>
+                         </property>
+                         <property name="frameShadow">
+                          <enum>QFrame::Raised</enum>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                     <widget class="QFrame" name="frame_123">
+                      <property name="geometry">
+                       <rect>
+                        <x>246</x>
+                        <y>10</y>
+                        <width>200</width>
+                        <height>206</height>
+                       </rect>
+                      </property>
+                      <property name="frameShape">
+                       <enum>QFrame::StyledPanel</enum>
+                      </property>
+                      <property name="frameShadow">
+                       <enum>QFrame::Raised</enum>
+                      </property>
+                      <layout class="QGridLayout" name="gridLayout_100">
+                       <property name="leftMargin">
+                        <number>0</number>
+                       </property>
+                       <property name="topMargin">
+                        <number>0</number>
+                       </property>
+                       <property name="rightMargin">
+                        <number>0</number>
+                       </property>
+                       <property name="bottomMargin">
+                        <number>0</number>
+                       </property>
+                       <property name="horizontalSpacing">
+                        <number>0</number>
+                       </property>
+                       <item row="0" column="0">
+                        <widget class="QFrame" name="frame_124">
+                         <property name="frameShape">
+                          <enum>QFrame::StyledPanel</enum>
+                         </property>
+                         <property name="frameShadow">
+                          <enum>QFrame::Raised</enum>
+                         </property>
+                         <layout class="QGridLayout" name="gridLayout_101">
+                          <property name="leftMargin">
+                           <number>0</number>
+                          </property>
+                          <property name="topMargin">
+                           <number>0</number>
+                          </property>
+                          <property name="rightMargin">
+                           <number>0</number>
+                          </property>
+                          <property name="bottomMargin">
+                           <number>0</number>
+                          </property>
+                          <item row="6" column="0">
+                           <widget class="QLabel" name="label_76">
+                            <property name="text">
+                             <string>Sex</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="7" column="0">
+                           <widget class="QLabel" name="label_77">
+                            <property name="text">
+                             <string>Date Added</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="0" column="0">
+                           <widget class="QLabel" name="label_78">
+                            <property name="text">
+                             <string>First Name</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="3" column="0">
+                           <widget class="QLabel" name="label_79">
+                            <property name="text">
+                             <string>Driver ID</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="5" column="0">
+                           <widget class="QLabel" name="label_80">
+                            <property name="text">
+                             <string>Date of Birth</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="1" column="0">
+                           <widget class="QLabel" name="label_81">
+                            <property name="text">
+                             <string>Last Name</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="4" column="0">
+                           <widget class="QLabel" name="label_82">
+                            <property name="text">
+                             <string>Age</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="2" column="0">
+                           <widget class="QLabel" name="label_83">
+                            <property name="text">
+                             <string>Email</string>
+                            </property>
+                           </widget>
+                          </item>
+                         </layout>
+                        </widget>
+                       </item>
+                       <item row="0" column="1">
+                        <widget class="QFrame" name="frame_125">
+                         <property name="frameShape">
+                          <enum>QFrame::StyledPanel</enum>
+                         </property>
+                         <property name="frameShadow">
+                          <enum>QFrame::Raised</enum>
+                         </property>
+                         <layout class="QGridLayout" name="gridLayout_102">
+                          <property name="leftMargin">
+                           <number>0</number>
+                          </property>
+                          <property name="topMargin">
+                           <number>0</number>
+                          </property>
+                          <property name="rightMargin">
+                           <number>0</number>
+                          </property>
+                          <property name="bottomMargin">
+                           <number>0</number>
+                          </property>
+                          <item row="3" column="0">
+                           <widget class="QLineEdit" name="driveriddisplay"/>
+                          </item>
+                          <item row="1" column="0">
+                           <widget class="QLineEdit" name="driverlndisplay"/>
+                          </item>
+                          <item row="6" column="0">
+                           <widget class="QLineEdit" name="driversexdisplay"/>
+                          </item>
+                          <item row="0" column="0">
+                           <widget class="QLineEdit" name="driverfndisplay"/>
+                          </item>
+                          <item row="4" column="0">
+                           <widget class="QLineEdit" name="driveragedisplay"/>
+                          </item>
+                          <item row="7" column="0">
+                           <widget class="QLineEdit" name="driverdateddisplay"/>
+                          </item>
+                          <item row="5" column="0">
+                           <widget class="QLineEdit" name="driverdobdisplay"/>
+                          </item>
+                          <item row="2" column="0">
+                           <widget class="QLineEdit" name="driveremaildisplay"/>
+                          </item>
+                         </layout>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                     <widget class="QFrame" name="frame_126">
+                      <property name="geometry">
+                       <rect>
+                        <x>10</x>
+                        <y>95</y>
+                        <width>230</width>
+                        <height>121</height>
+                       </rect>
+                      </property>
+                      <property name="frameShape">
+                       <enum>QFrame::StyledPanel</enum>
+                      </property>
+                      <property name="frameShadow">
+                       <enum>QFrame::Raised</enum>
+                      </property>
+                      <layout class="QGridLayout" name="gridLayout_103">
+                       <item row="1" column="1">
+                        <widget class="QLineEdit" name="permitnumberdisplay"/>
+                       </item>
+                       <item row="3" column="1">
+                        <widget class="QPushButton" name="editdriverdetails">
+                         <property name="text">
+                          <string>Edit Driver Details</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="2" column="0">
+                        <widget class="QLabel" name="label_84">
+                         <property name="text">
+                          <string>Permit Class</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="2" column="1">
+                        <widget class="QLineEdit" name="permitclassdisplay">
+                         <property name="readOnly">
+                          <bool>true</bool>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="1" column="0">
+                        <widget class="QLabel" name="label_85">
+                         <property name="text">
+                          <string>Permit Number</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="0" column="1">
+                        <widget class="QLineEdit" name="drivercurrentstatus"/>
+                       </item>
+                       <item row="0" column="0">
+                        <widget class="QLabel" name="label_86">
+                         <property name="text">
+                          <string>Current Status</string>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
                     </widget>
                    </item>
                    <item row="1" column="3">
@@ -3601,17 +4211,6 @@ QMainWindow{background-color:#fffafa;}
         </widget>
        </item>
       </layout>
-     </widget>
-    </item>
-    <item row="1" column="0">
-     <widget class="QFrame" name="frame_2">
-      <property name="frameShape">
-       <enum>QFrame::StyledPanel</enum>
-      </property>
-      <property name="frameShadow">
-       <enum>QFrame::Raised</enum>
-      </property>
-      <layout class="QGridLayout" name="gridLayout_2"/>
      </widget>
     </item>
    </layout>

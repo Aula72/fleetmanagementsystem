@@ -6,6 +6,7 @@ import uimain, deploycar, alldialog
 import os
 import shutil, time
 
+
 class MainClassFleetX(QMainWindow, uimain.Ui_FleetX):
     signal = pyqtSignal()
     def __init__(self):
@@ -15,7 +16,7 @@ class MainClassFleetX(QMainWindow, uimain.Ui_FleetX):
         self.driversbutton.clicked.connect(self.drivers)
         self.maintenancebutton.clicked.connect(self.maintenance)
         self.reportsbutton.clicked.connect(self.reports)
-        self.userbutton.clicked.connect(self.userdetails)
+        #self.userbutton.clicked.connect(self.userdetails)
         self.uncertainitiesbutton.clicked.connect(self.uncertainity)
         self.searchbutton.clicked.connect(self.msearch)
         self.logoutbutton.clicked.connect(self.loginpage)
@@ -37,10 +38,9 @@ class MainClassFleetX(QMainWindow, uimain.Ui_FleetX):
         self.objectrayicon.show()
         self.usernamedisplay.setText("Aula")
         self.adddriverbutton.clicked.connect(self.getfile)
-        self.backtocars.clicked.connect(self.cars)
+        #self.backtocars.clicked.connect(self.cars)
         
-    #deploycar is tab 7
-    #driver details tab 8
+    
     def deploying(self):
         self.mainstackedwidget.setCurrentIndex(7)
 
@@ -135,9 +135,8 @@ class MainClassFleetX(QMainWindow, uimain.Ui_FleetX):
         
         self.destpath = 'D:\\FLEET\\fleetmanagement\\aula\\'
         #self.saveto = (self.destpath,os.path.dirname(self.upl))
-        self.saveto = os.path.join(self.destpath,os.path.dirname(self.upl))
-        
-        os.makedirs(self.saveto)
+        #self.saveto = os.path.join(self.destpath,os.path.dirname(self.upl))
+        ''' os.makedirs(self.saveto)
         shutil.copy(self.upl, self.destpath)
         assert not os.path.abspath(self.upl)
         
@@ -146,6 +145,7 @@ class MainClassFleetX(QMainWindow, uimain.Ui_FleetX):
         self.n = os.ctermid(self.saveto)
         print(self.n)
         shutil.move(self.saveto, self.destpath)
+        '''
     def getfiles(self):
         self.dlg = QFileDialog()
         self.dlg.setFileMode(QFileDialog.AnyFile)
@@ -157,11 +157,21 @@ class MainClassFleetX(QMainWindow, uimain.Ui_FleetX):
             with self.f:
                 self.data = self.f.read()
     
-    
+    def filerename(self):
+        pass
     def savephoto(self):
         pass
     def pictures(self):
         os.mkdir("./aula")
+    def copyFile(self, src, dest):
+        try:
+            shutil.copy(self.src, self.dest)
+        # eg. src and dest are the same file
+        except shutil.Error as e:
+            print('Error: %s' % e)
+        # eg. source or destination doesn't exist
+        except IOError as e:
+            print('Error: %s' % e.strerror)
 
 if __name__=="__main__":
     #MainClassFleetX.pictures(None)
