@@ -50,7 +50,7 @@ QMainWindow{background-color:#fffafa;}
        <item row="0" column="0">
         <widget class="QStackedWidget" name="loginstackedwidget">
          <property name="currentIndex">
-          <number>0</number>
+          <number>2</number>
          </property>
          <widget class="QWidget" name="page">
           <layout class="QGridLayout" name="gridLayout_13">
@@ -984,7 +984,7 @@ QMainWindow{background-color:#fffafa;}
            <item row="0" column="1">
             <widget class="QStackedWidget" name="mainstackedwidget">
              <property name="currentIndex">
-              <number>5</number>
+              <number>0</number>
              </property>
              <widget class="QWidget" name="page_4">
               <layout class="QGridLayout" name="gridLayout_29">
@@ -994,7 +994,7 @@ QMainWindow{background-color:#fffafa;}
                   <item row="0" column="0">
                    <widget class="QTabWidget" name="carswidget">
                     <property name="currentIndex">
-                     <number>0</number>
+                     <number>4</number>
                     </property>
                     <widget class="QWidget" name="tab">
                      <attribute name="title">
@@ -1750,14 +1750,14 @@ QMainWindow{background-color:#fffafa;}
                           <widget class="QDateEdit" name="expirydate"/>
                          </item>
                          <item row="4" column="0" colspan="3">
-                          <widget class="QLineEdit" name="lineEdit">
+                          <widget class="QLineEdit" name="frontimage">
                            <property name="autoFillBackground">
                             <bool>false</bool>
                            </property>
                           </widget>
                          </item>
                          <item row="4" column="3">
-                          <widget class="QPushButton" name="pushButton_3">
+                          <widget class="QPushButton" name="frontimagebutton">
                            <property name="text">
                             <string/>
                            </property>
@@ -1768,14 +1768,14 @@ QMainWindow{background-color:#fffafa;}
                           </widget>
                          </item>
                          <item row="5" column="0" colspan="3">
-                          <widget class="QLineEdit" name="lineEdit_3">
+                          <widget class="QLineEdit" name="rightimage">
                            <property name="autoFillBackground">
                             <bool>false</bool>
                            </property>
                           </widget>
                          </item>
                          <item row="5" column="3">
-                          <widget class="QPushButton" name="pushButton_4">
+                          <widget class="QPushButton" name="rightimagebutton">
                            <property name="text">
                             <string/>
                            </property>
@@ -1786,10 +1786,10 @@ QMainWindow{background-color:#fffafa;}
                           </widget>
                          </item>
                          <item row="7" column="0" colspan="2">
-                          <widget class="QLineEdit" name="lineEdit_4"/>
+                          <widget class="QLineEdit" name="behindimage"/>
                          </item>
                          <item row="7" column="2" colspan="2">
-                          <widget class="QPushButton" name="pushButton_5">
+                          <widget class="QPushButton" name="behindimagebutton">
                            <property name="text">
                             <string/>
                            </property>
@@ -1800,7 +1800,7 @@ QMainWindow{background-color:#fffafa;}
                           </widget>
                          </item>
                          <item row="6" column="2" colspan="2">
-                          <widget class="QPushButton" name="pushButton_6">
+                          <widget class="QPushButton" name="leftimagebutton">
                            <property name="text">
                             <string/>
                            </property>
@@ -1811,7 +1811,7 @@ QMainWindow{background-color:#fffafa;}
                           </widget>
                          </item>
                          <item row="6" column="0">
-                          <widget class="QLineEdit" name="lineEdit_2"/>
+                          <widget class="QLineEdit" name="leftimage"/>
                          </item>
                         </layout>
                        </widget>
@@ -1940,7 +1940,7 @@ QMainWindow{background-color:#fffafa;}
                <item row="0" column="0">
                 <widget class="QTabWidget" name="driverwidget">
                  <property name="currentIndex">
-                  <number>0</number>
+                  <number>1</number>
                  </property>
                  <widget class="QWidget" name="tab_4">
                   <attribute name="title">
@@ -2193,7 +2193,7 @@ QMainWindow{background-color:#fffafa;}
                      </property>
                      <layout class="QGridLayout" name="gridLayout_47">
                       <item row="0" column="0">
-                       <widget class="QPushButton" name="adddriverbutton">
+                       <widget class="QPushButton" name="newdriverbutton">
                         <property name="text">
                          <string>Add Driver</string>
                         </property>
@@ -3908,264 +3908,248 @@ QMainWindow{background-color:#fffafa;}
                      <property name="frameShadow">
                       <enum>QFrame::Raised</enum>
                      </property>
-                     <widget class="QFrame" name="userimageframe_2">
-                      <property name="geometry">
-                       <rect>
-                        <x>10</x>
-                        <y>10</y>
-                        <width>46</width>
-                        <height>30</height>
-                       </rect>
-                      </property>
-                      <property name="frameShape">
-                       <enum>QFrame::StyledPanel</enum>
-                      </property>
-                      <property name="frameShadow">
-                       <enum>QFrame::Raised</enum>
-                      </property>
-                      <layout class="QGridLayout" name="gridLayout_99">
-                       <item row="0" column="0">
-                        <widget class="QFrame" name="frame_121">
-                         <property name="frameShape">
-                          <enum>QFrame::StyledPanel</enum>
+                     <layout class="QGridLayout" name="gridLayout_119">
+                      <item row="0" column="0">
+                       <widget class="QFrame" name="userimageframe_2">
+                        <property name="frameShape">
+                         <enum>QFrame::StyledPanel</enum>
+                        </property>
+                        <property name="frameShadow">
+                         <enum>QFrame::Raised</enum>
+                        </property>
+                        <layout class="QGridLayout" name="gridLayout_99">
+                         <item row="0" column="0">
+                          <widget class="QFrame" name="frame_121">
+                           <property name="frameShape">
+                            <enum>QFrame::StyledPanel</enum>
+                           </property>
+                           <property name="frameShadow">
+                            <enum>QFrame::Raised</enum>
+                           </property>
+                          </widget>
+                         </item>
+                         <item row="0" column="1">
+                          <widget class="QFrame" name="frame_122">
+                           <property name="frameShape">
+                            <enum>QFrame::StyledPanel</enum>
+                           </property>
+                           <property name="frameShadow">
+                            <enum>QFrame::Raised</enum>
+                           </property>
+                          </widget>
+                         </item>
+                        </layout>
+                       </widget>
+                      </item>
+                      <item row="0" column="1" rowspan="2">
+                       <widget class="QFrame" name="frame_123">
+                        <property name="frameShape">
+                         <enum>QFrame::StyledPanel</enum>
+                        </property>
+                        <property name="frameShadow">
+                         <enum>QFrame::Raised</enum>
+                        </property>
+                        <layout class="QGridLayout" name="gridLayout_100">
+                         <property name="leftMargin">
+                          <number>0</number>
                          </property>
-                         <property name="frameShadow">
-                          <enum>QFrame::Raised</enum>
+                         <property name="topMargin">
+                          <number>0</number>
                          </property>
-                        </widget>
-                       </item>
-                       <item row="0" column="1">
-                        <widget class="QFrame" name="frame_122">
-                         <property name="frameShape">
-                          <enum>QFrame::StyledPanel</enum>
+                         <property name="rightMargin">
+                          <number>0</number>
                          </property>
-                         <property name="frameShadow">
-                          <enum>QFrame::Raised</enum>
+                         <property name="bottomMargin">
+                          <number>0</number>
                          </property>
-                        </widget>
-                       </item>
-                      </layout>
-                     </widget>
-                     <widget class="QFrame" name="frame_123">
-                      <property name="geometry">
-                       <rect>
-                        <x>246</x>
-                        <y>10</y>
-                        <width>200</width>
-                        <height>206</height>
-                       </rect>
-                      </property>
-                      <property name="frameShape">
-                       <enum>QFrame::StyledPanel</enum>
-                      </property>
-                      <property name="frameShadow">
-                       <enum>QFrame::Raised</enum>
-                      </property>
-                      <layout class="QGridLayout" name="gridLayout_100">
-                       <property name="leftMargin">
-                        <number>0</number>
-                       </property>
-                       <property name="topMargin">
-                        <number>0</number>
-                       </property>
-                       <property name="rightMargin">
-                        <number>0</number>
-                       </property>
-                       <property name="bottomMargin">
-                        <number>0</number>
-                       </property>
-                       <property name="horizontalSpacing">
-                        <number>0</number>
-                       </property>
-                       <item row="0" column="0">
-                        <widget class="QFrame" name="frame_124">
-                         <property name="frameShape">
-                          <enum>QFrame::StyledPanel</enum>
+                         <property name="horizontalSpacing">
+                          <number>0</number>
                          </property>
-                         <property name="frameShadow">
-                          <enum>QFrame::Raised</enum>
-                         </property>
-                         <layout class="QGridLayout" name="gridLayout_101">
-                          <property name="leftMargin">
-                           <number>0</number>
-                          </property>
-                          <property name="topMargin">
-                           <number>0</number>
-                          </property>
-                          <property name="rightMargin">
-                           <number>0</number>
-                          </property>
-                          <property name="bottomMargin">
-                           <number>0</number>
-                          </property>
-                          <item row="6" column="0">
-                           <widget class="QLabel" name="label_76">
-                            <property name="text">
-                             <string>Sex</string>
+                         <item row="0" column="0">
+                          <widget class="QFrame" name="frame_124">
+                           <property name="frameShape">
+                            <enum>QFrame::StyledPanel</enum>
+                           </property>
+                           <property name="frameShadow">
+                            <enum>QFrame::Raised</enum>
+                           </property>
+                           <layout class="QGridLayout" name="gridLayout_101">
+                            <property name="leftMargin">
+                             <number>0</number>
                             </property>
-                           </widget>
-                          </item>
-                          <item row="7" column="0">
-                           <widget class="QLabel" name="label_77">
-                            <property name="text">
-                             <string>Date Added</string>
+                            <property name="topMargin">
+                             <number>0</number>
                             </property>
-                           </widget>
-                          </item>
-                          <item row="0" column="0">
-                           <widget class="QLabel" name="label_78">
-                            <property name="text">
-                             <string>First Name</string>
+                            <property name="rightMargin">
+                             <number>0</number>
                             </property>
-                           </widget>
-                          </item>
-                          <item row="3" column="0">
-                           <widget class="QLabel" name="label_79">
-                            <property name="text">
-                             <string>Driver ID</string>
+                            <property name="bottomMargin">
+                             <number>0</number>
                             </property>
-                           </widget>
-                          </item>
-                          <item row="5" column="0">
-                           <widget class="QLabel" name="label_80">
-                            <property name="text">
-                             <string>Date of Birth</string>
+                            <item row="6" column="0">
+                             <widget class="QLabel" name="label_76">
+                              <property name="text">
+                               <string>Sex</string>
+                              </property>
+                             </widget>
+                            </item>
+                            <item row="7" column="0">
+                             <widget class="QLabel" name="label_77">
+                              <property name="text">
+                               <string>Date Added</string>
+                              </property>
+                             </widget>
+                            </item>
+                            <item row="0" column="0">
+                             <widget class="QLabel" name="label_78">
+                              <property name="text">
+                               <string>First Name</string>
+                              </property>
+                             </widget>
+                            </item>
+                            <item row="3" column="0">
+                             <widget class="QLabel" name="label_79">
+                              <property name="text">
+                               <string>Driver ID</string>
+                              </property>
+                             </widget>
+                            </item>
+                            <item row="5" column="0">
+                             <widget class="QLabel" name="label_80">
+                              <property name="text">
+                               <string>Date of Birth</string>
+                              </property>
+                             </widget>
+                            </item>
+                            <item row="1" column="0">
+                             <widget class="QLabel" name="label_81">
+                              <property name="text">
+                               <string>Last Name</string>
+                              </property>
+                             </widget>
+                            </item>
+                            <item row="4" column="0">
+                             <widget class="QLabel" name="label_82">
+                              <property name="text">
+                               <string>Age</string>
+                              </property>
+                             </widget>
+                            </item>
+                            <item row="2" column="0">
+                             <widget class="QLabel" name="label_83">
+                              <property name="text">
+                               <string>Email</string>
+                              </property>
+                             </widget>
+                            </item>
+                           </layout>
+                          </widget>
+                         </item>
+                         <item row="0" column="1">
+                          <widget class="QFrame" name="frame_125">
+                           <property name="frameShape">
+                            <enum>QFrame::StyledPanel</enum>
+                           </property>
+                           <property name="frameShadow">
+                            <enum>QFrame::Raised</enum>
+                           </property>
+                           <layout class="QGridLayout" name="gridLayout_102">
+                            <property name="leftMargin">
+                             <number>0</number>
                             </property>
-                           </widget>
-                          </item>
-                          <item row="1" column="0">
-                           <widget class="QLabel" name="label_81">
-                            <property name="text">
-                             <string>Last Name</string>
+                            <property name="topMargin">
+                             <number>0</number>
                             </property>
-                           </widget>
-                          </item>
-                          <item row="4" column="0">
-                           <widget class="QLabel" name="label_82">
-                            <property name="text">
-                             <string>Age</string>
+                            <property name="rightMargin">
+                             <number>0</number>
                             </property>
-                           </widget>
-                          </item>
-                          <item row="2" column="0">
-                           <widget class="QLabel" name="label_83">
-                            <property name="text">
-                             <string>Email</string>
+                            <property name="bottomMargin">
+                             <number>0</number>
                             </property>
-                           </widget>
-                          </item>
-                         </layout>
-                        </widget>
-                       </item>
-                       <item row="0" column="1">
-                        <widget class="QFrame" name="frame_125">
-                         <property name="frameShape">
-                          <enum>QFrame::StyledPanel</enum>
-                         </property>
-                         <property name="frameShadow">
-                          <enum>QFrame::Raised</enum>
-                         </property>
-                         <layout class="QGridLayout" name="gridLayout_102">
-                          <property name="leftMargin">
-                           <number>0</number>
-                          </property>
-                          <property name="topMargin">
-                           <number>0</number>
-                          </property>
-                          <property name="rightMargin">
-                           <number>0</number>
-                          </property>
-                          <property name="bottomMargin">
-                           <number>0</number>
-                          </property>
-                          <item row="3" column="0">
-                           <widget class="QLineEdit" name="driveriddisplay"/>
-                          </item>
-                          <item row="1" column="0">
-                           <widget class="QLineEdit" name="driverlndisplay"/>
-                          </item>
-                          <item row="6" column="0">
-                           <widget class="QLineEdit" name="driversexdisplay"/>
-                          </item>
-                          <item row="0" column="0">
-                           <widget class="QLineEdit" name="driverfndisplay"/>
-                          </item>
-                          <item row="4" column="0">
-                           <widget class="QLineEdit" name="driveragedisplay"/>
-                          </item>
-                          <item row="7" column="0">
-                           <widget class="QLineEdit" name="driverdateddisplay"/>
-                          </item>
-                          <item row="5" column="0">
-                           <widget class="QLineEdit" name="driverdobdisplay"/>
-                          </item>
-                          <item row="2" column="0">
-                           <widget class="QLineEdit" name="driveremaildisplay"/>
-                          </item>
-                         </layout>
-                        </widget>
-                       </item>
-                      </layout>
-                     </widget>
-                     <widget class="QFrame" name="frame_126">
-                      <property name="geometry">
-                       <rect>
-                        <x>10</x>
-                        <y>95</y>
-                        <width>230</width>
-                        <height>121</height>
-                       </rect>
-                      </property>
-                      <property name="frameShape">
-                       <enum>QFrame::StyledPanel</enum>
-                      </property>
-                      <property name="frameShadow">
-                       <enum>QFrame::Raised</enum>
-                      </property>
-                      <layout class="QGridLayout" name="gridLayout_103">
-                       <item row="1" column="1">
-                        <widget class="QLineEdit" name="permitnumberdisplay"/>
-                       </item>
-                       <item row="3" column="1">
-                        <widget class="QPushButton" name="editdriverdetails">
-                         <property name="text">
-                          <string>Edit Driver Details</string>
-                         </property>
-                        </widget>
-                       </item>
-                       <item row="2" column="0">
-                        <widget class="QLabel" name="label_84">
-                         <property name="text">
-                          <string>Permit Class</string>
-                         </property>
-                        </widget>
-                       </item>
-                       <item row="2" column="1">
-                        <widget class="QLineEdit" name="permitclassdisplay">
-                         <property name="readOnly">
-                          <bool>true</bool>
-                         </property>
-                        </widget>
-                       </item>
-                       <item row="1" column="0">
-                        <widget class="QLabel" name="label_85">
-                         <property name="text">
-                          <string>Permit Number</string>
-                         </property>
-                        </widget>
-                       </item>
-                       <item row="0" column="1">
-                        <widget class="QLineEdit" name="drivercurrentstatus"/>
-                       </item>
-                       <item row="0" column="0">
-                        <widget class="QLabel" name="label_86">
-                         <property name="text">
-                          <string>Current Status</string>
-                         </property>
-                        </widget>
-                       </item>
-                      </layout>
-                     </widget>
+                            <item row="3" column="0">
+                             <widget class="QLineEdit" name="driveriddisplay"/>
+                            </item>
+                            <item row="1" column="0">
+                             <widget class="QLineEdit" name="driverlndisplay"/>
+                            </item>
+                            <item row="6" column="0">
+                             <widget class="QLineEdit" name="driversexdisplay"/>
+                            </item>
+                            <item row="0" column="0">
+                             <widget class="QLineEdit" name="driverfndisplay"/>
+                            </item>
+                            <item row="4" column="0">
+                             <widget class="QLineEdit" name="driveragedisplay"/>
+                            </item>
+                            <item row="7" column="0">
+                             <widget class="QLineEdit" name="driverdateddisplay"/>
+                            </item>
+                            <item row="5" column="0">
+                             <widget class="QLineEdit" name="driverdobdisplay"/>
+                            </item>
+                            <item row="2" column="0">
+                             <widget class="QLineEdit" name="driveremaildisplay"/>
+                            </item>
+                           </layout>
+                          </widget>
+                         </item>
+                        </layout>
+                       </widget>
+                      </item>
+                      <item row="1" column="0">
+                       <widget class="QFrame" name="frame_126">
+                        <property name="frameShape">
+                         <enum>QFrame::StyledPanel</enum>
+                        </property>
+                        <property name="frameShadow">
+                         <enum>QFrame::Raised</enum>
+                        </property>
+                        <layout class="QGridLayout" name="gridLayout_103">
+                         <item row="1" column="1">
+                          <widget class="QLineEdit" name="permitnumberdisplay"/>
+                         </item>
+                         <item row="3" column="1">
+                          <widget class="QPushButton" name="editdriverdetails">
+                           <property name="text">
+                            <string>Edit Driver Details</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item row="2" column="0">
+                          <widget class="QLabel" name="label_84">
+                           <property name="text">
+                            <string>Permit Class</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item row="2" column="1">
+                          <widget class="QLineEdit" name="permitclassdisplay">
+                           <property name="readOnly">
+                            <bool>true</bool>
+                           </property>
+                          </widget>
+                         </item>
+                         <item row="1" column="0">
+                          <widget class="QLabel" name="label_85">
+                           <property name="text">
+                            <string>Permit Number</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item row="0" column="1">
+                          <widget class="QLineEdit" name="drivercurrentstatus"/>
+                         </item>
+                         <item row="0" column="0">
+                          <widget class="QLabel" name="label_86">
+                           <property name="text">
+                            <string>Current Status</string>
+                           </property>
+                          </widget>
+                         </item>
+                        </layout>
+                       </widget>
+                      </item>
+                     </layout>
                     </widget>
                    </item>
                    <item row="1" column="3">

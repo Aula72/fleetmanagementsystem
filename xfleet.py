@@ -2,7 +2,7 @@ from PyQt5.QtCore import *
 from PyQt5.QtGui import *
 from PyQt5.QtWidgets import *
 import sys
-import uimain, deploycar, alldialog
+import uimain
 import os
 import shutil, time
 
@@ -20,13 +20,16 @@ class MainClassFleetX(QMainWindow, uimain.Ui_FleetX):
         self.uncertainitiesbutton.clicked.connect(self.uncertainity)
         self.searchbutton.clicked.connect(self.msearch)
         self.logoutbutton.clicked.connect(self.loginpage)
-        self.driverphoto.pressed.connect(self.getfile)
+        self.driverphoto.pressed.connect(self.driverpics)
+        self.rightimagebutton.pressed.connect(self.rightpics)
+        self.leftimagebutton.pressed.connect(self.leftpics)
+        self.behindimagebutton.pressed.connect(self.behindpics)
+        #self.driverphoto.pressed.connect(self.driverpics)
         self.addcar.pressed.connect(self.addcarfunction)
-        self.adddriverbutton.pressed.connect(self.driveraddfunction)
+        self.newdriverbutton.pressed.connect(self.driveraddfunction)
         self.addaccident.pressed.connect(self.addaccidenteventfunction)
         self.viewpreviousmaintenance.clicked.connect(self.viewpreviousmaintenancefunction)
-        self.loginbutton.clicked.connect(self.firstpage)
-        #self.userbutton.clicked.connect(self.deploycarshow)
+        self.loginbutton.clicked.connect(self.firstpage)    
         self.trayicon = QIcon("icons/app-icon.png")
         self.objectrayicon = QSystemTrayIcon(self.trayicon, self)
         self.traymenu = QMenu()
@@ -35,9 +38,10 @@ class MainClassFleetX(QMainWindow, uimain.Ui_FleetX):
         self.traymenu.addActions([self.xlogout,self.xclose])
         self.objectrayicon.setContextMenu(self.traymenu)
         self.xclose.triggered.connect(self.close)
+        self.xlogout.triggered.connect(self.loginpage)
         self.objectrayicon.show()
         self.usernamedisplay.setText("Aula")
-        self.adddriverbutton.clicked.connect(self.getfile)
+        self.frontimagebutton.clicked.connect(self.getfile)
         #self.backtocars.clicked.connect(self.cars)
         
     
@@ -83,13 +87,8 @@ class MainClassFleetX(QMainWindow, uimain.Ui_FleetX):
         self.subscription_date = self.subscriptiondate.date()
         self.expiry_date = self.expirydate.date()
         
-        try: 
-            print(self.initialmileage)  
-        except:
-
-            print("heutfh")
-        print(self.expiry_date) 
-        print(self.fueltype)
+        
+        
     def driveraddfunction(self):
         self.firstnamedrive = self.fnamedrive.text()
         self.secondnamedrive = self.lnamedrive.text()
@@ -99,8 +98,10 @@ class MainClassFleetX(QMainWindow, uimain.Ui_FleetX):
         self.email = self.emaildriver.text()
         self.dob = self.birthdate.date()
         self.permit_number = self.permitnumber.text()
-        self.permit_class = self.permitclass.text()
-        print(self.gender)
+        self.permit_class = self.permitclass.currentText()
+        #self.driverpics()
+        #print(self.gender)
+        
     def addaccidenteventfunction(self):
         self.carregnumber = self.caraccnumber.text()
         self.acclocation = self.accidentlocation.text()
@@ -112,7 +113,7 @@ class MainClassFleetX(QMainWindow, uimain.Ui_FleetX):
         self.accdriverstatus = self.driverstatus.currentText()
         self.accdescption = self.briefdescription.toPlainText()
         self.accresolution = self.resolution.toPlainText()
-        print(self.accdescption)
+        
     def viewpreviousmaintenancefunction(self):
         self.newitem = self.viewpreviousmaintenance.rowCount()
         self.viewpreviousmaintenance.insertRow(self.newitem)
@@ -125,54 +126,54 @@ class MainClassFleetX(QMainWindow, uimain.Ui_FleetX):
         self.viewpreviousmaintenance.setItem(self.newitem,1,self.r2)
         self.viewpreviousmaintenance.setItem(self.newitem,2,self.r3)
         self.viewpreviousmaintenance.setItem(self.newitem,3,self.r4)
+
     def getfile(self):        
         self.fname = QFileDialog()
         self.upl=self.fname.getOpenFileName(self, 'Open File',"c:\\","Image Files (*.gif *.jpg *.png)")
-        print(self.upl)
-        print(os.getcwd())
-        #print(os.path.dirname(os.path.realpath(self.upl)))
-        #print(os.path.mv(self.upl))
-        
-        self.destpath = 'D:\\FLEET\\fleetmanagement\\aula\\'
-        #self.saveto = (self.destpath,os.path.dirname(self.upl))
-        #self.saveto = os.path.join(self.destpath,os.path.dirname(self.upl))
-        ''' os.makedirs(self.saveto)
-        shutil.copy(self.upl, self.destpath)
-        assert not os.path.abspath(self.upl)
-        
-        #self.srcfile = 
-        
-        self.n = os.ctermid(self.saveto)
-        print(self.n)
-        shutil.move(self.saveto, self.destpath)
-        '''
-    def getfiles(self):
-        self.dlg = QFileDialog()
-        self.dlg.setFileMode(QFileDialog.AnyFile)
-        self.dlg.setFilter("Images (*.png *.jpg *.gif)")
-        self.filenames = QStringList()
-        if self.dlg.exec_():
-            self.filenames=self.dlg.selectedFiles()
-            self.f=open(filenames[0],'r')
-            with self.f:
-                self.data = self.f.read()
-    
-    def filerename(self):
-        pass
-    def savephoto(self):
-        pass
-    def pictures(self):
-        os.mkdir("./aula")
+         
+   
     def copyFile(self, src, dest):
         try:
-            shutil.copy(self.src, self.dest)
+            shutil.copy(src, dest)
         # eg. src and dest are the same file
         except shutil.Error as e:
             print('Error: %s' % e)
         # eg. source or destination doesn't exist
         except IOError as e:
             print('Error: %s' % e.strerror)
-
+    def renamefile(self):
+        self.realname = os.path.basename(os.path.splitext(self.upl)[0])
+        self.newname = self.realname + "1234"
+    def driverpics(self):
+        self.getfile()
+        self.drivepath = ".\\allpics\\drivers\\"
+        self.drivephoto.setText(self.upl[0])
+        shutil.copy(self.upl[0], self.drivepath)
+        #.replace(os.path.basename(os.path.splitext(self.upl[0])[0]),'1')
+    def frontpics(self):
+        self.getfile()
+        self.frontpath = ".\\allpics\\front\\"
+        self.frontimage.setText(self.upl[0])
+        shutil.copy(self.upl[0], self.frontpath)
+        #.replace(os.path.basename(os.path.splitext(self.upl[0])[0]),'1')
+    def leftpics(self):
+        self.getfile()
+        self.leftpath = ".\\allpics\\left\\"
+        self.leftimage.setText(self.upl[0])
+        shutil.copy(self.upl[0], self.leftpath)
+        #.replace(os.path.basename(os.path.splitext(self.upl[0])[0]),'1')
+    def rightpics(self):
+        self.getfile()
+        self.rightpath = ".\\allpics\\right\\"
+        self.rightimage.setText(self.upl[0])
+        shutil.copy(self.upl[0], self.rightpath)
+        #.replace(os.path.basename(os.path.splitext(self.upl[0])[0]),'1')
+    def behindpics(self):
+        self.getfile()
+        self.drivepath = ".\\allpics\\behind\\"
+        self.leftimage.setText(self.upl[0])
+        shutil.copy(self.upl[0], self.behindpath)
+        #.replace(os.path.basename(os.path.splitext(self.upl[0])[0]),'1')
 if __name__=="__main__":
     #MainClassFleetX.pictures(None)
     myapp = QApplication(sys.argv)
