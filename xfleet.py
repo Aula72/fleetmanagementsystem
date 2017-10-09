@@ -1,11 +1,9 @@
 from PyQt5.QtCore import *
 from PyQt5.QtGui import *
-from PyQt5.QtWidgets import *
-import sys
+from PyQt5.QtWidgets import * 
 import uimain
-import os
-import shutil, time
-
+import os, shutil, time, sys, string
+from random import randint
 
 class MainClassFleetX(QMainWindow, uimain.Ui_FleetX):
     signal = pyqtSignal()
@@ -24,6 +22,7 @@ class MainClassFleetX(QMainWindow, uimain.Ui_FleetX):
         self.rightimagebutton.pressed.connect(self.rightpics)
         self.leftimagebutton.pressed.connect(self.leftpics)
         self.behindimagebutton.pressed.connect(self.behindpics)
+        self.frontimagebutton.pressed.connect(self.frontpics)
         #self.driverphoto.pressed.connect(self.driverpics)
         self.addcar.pressed.connect(self.addcarfunction)
         self.newdriverbutton.pressed.connect(self.driveraddfunction)
@@ -42,8 +41,8 @@ class MainClassFleetX(QMainWindow, uimain.Ui_FleetX):
         self.objectrayicon.show()
         self.usernamedisplay.setText("Aula")
         self.frontimagebutton.clicked.connect(self.getfile)
-        #self.backtocars.clicked.connect(self.cars)
-        
+        self.invoicepicture.clicked.connect(self.invoicesupload)
+               
     
     def deploying(self):
         self.mainstackedwidget.setCurrentIndex(7)
@@ -129,51 +128,45 @@ class MainClassFleetX(QMainWindow, uimain.Ui_FleetX):
 
     def getfile(self):        
         self.fname = QFileDialog()
-        self.upl=self.fname.getOpenFileName(self, 'Open File',"c:\\","Image Files (*.gif *.jpg *.png)")
+        self.upl=self.fname.getOpenFileName(self, 'Open File',"c:\\","Image Files (*.gif *.jpg *.png)")     
          
-   
-    def copyFile(self, src, dest):
-        try:
-            shutil.copy(src, dest)
-        # eg. src and dest are the same file
-        except shutil.Error as e:
-            print('Error: %s' % e)
-        # eg. source or destination doesn't exist
-        except IOError as e:
-            print('Error: %s' % e.strerror)
-    def renamefile(self):
-        self.realname = os.path.basename(os.path.splitext(self.upl)[0])
-        self.newname = self.realname + "1234"
+
     def driverpics(self):
+        self.driverpic = str(self.fnamedrive.text())+str(self.lnamedrive.text())+str(self.phonedrive.text())      
         self.getfile()
-        self.drivepath = ".\\allpics\\drivers\\"
+        self.drivepath = ".\\allpics\\drivers\\"+self.driverpic+".png"
         self.drivephoto.setText(self.upl[0])
         shutil.copy(self.upl[0], self.drivepath)
-        #.replace(os.path.basename(os.path.splitext(self.upl[0])[0]),'1')
+        
     def frontpics(self):
         self.getfile()
-        self.frontpath = ".\\allpics\\front\\"
+        self.frontpath = ".\\allpics\\cars\\front\\"+str(self.licensenumber.text()).replace(" ","")+"front"+".png"
         self.frontimage.setText(self.upl[0])
         shutil.copy(self.upl[0], self.frontpath)
-        #.replace(os.path.basename(os.path.splitext(self.upl[0])[0]),'1')
+       
     def leftpics(self):
         self.getfile()
-        self.leftpath = ".\\allpics\\left\\"
+        self.leftpath = ".\\allpics\\cars\\left\\"+str(self.licensenumber.text()).replace(" ","")+"left_side"+".png"
         self.leftimage.setText(self.upl[0])
         shutil.copy(self.upl[0], self.leftpath)
-        #.replace(os.path.basename(os.path.splitext(self.upl[0])[0]),'1')
+       
     def rightpics(self):
         self.getfile()
-        self.rightpath = ".\\allpics\\right\\"
+        self.rightpath = ".\\allpics\\cars\\right\\"+str(self.licensenumber.text()).replace(" ","")+"right_side"+".png"
         self.rightimage.setText(self.upl[0])
         shutil.copy(self.upl[0], self.rightpath)
-        #.replace(os.path.basename(os.path.splitext(self.upl[0])[0]),'1')
+        
     def behindpics(self):
         self.getfile()
-        self.drivepath = ".\\allpics\\behind\\"
-        self.leftimage.setText(self.upl[0])
+        self.behindpath = ".\\allpics\\cars\\behind\\"+str(self.licensenumber.text()).replace(" ","")+"back_side"+".png"
+        self.behindimage.setText(self.upl[0])
         shutil.copy(self.upl[0], self.behindpath)
-        #.replace(os.path.basename(os.path.splitext(self.upl[0])[0]),'1')
+    def invoicesupload(self):
+        self.getfile()
+        self.invoicepath = ".\\allpics\\invoices\\"+str(self.numcarserv.text()).replace(" ","")+"card"+".png"
+        self.invoiceimage.setText(self.upl[0])
+        shutil.copy(self.upl[0], self.invoicepath)
+       
 if __name__=="__main__":
     #MainClassFleetX.pictures(None)
     myapp = QApplication(sys.argv)

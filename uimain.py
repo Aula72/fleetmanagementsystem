@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'loginui.ui'
 #
-# Created: Wed Oct  4 01:08:01 2017
+# Created: Mon Oct  9 15:34:00 2017
 #      by: PyQt5 UI code generator 5.3.1
 #
 # WARNING! All changes made in this file will be lost!
@@ -1437,11 +1437,11 @@ class Ui_FleetX(object):
         self.invoiceimage = QtWidgets.QLineEdit(self.frame_81)
         self.invoiceimage.setObjectName("invoiceimage")
         self.gridLayout_72.addWidget(self.invoiceimage, 2, 0, 1, 1)
-        self.pushButton = QtWidgets.QPushButton(self.frame_81)
-        self.pushButton.setText("")
-        self.pushButton.setIcon(icon1)
-        self.pushButton.setObjectName("pushButton")
-        self.gridLayout_72.addWidget(self.pushButton, 2, 1, 1, 1)
+        self.invoicepicture = QtWidgets.QPushButton(self.frame_81)
+        self.invoicepicture.setText("")
+        self.invoicepicture.setIcon(icon1)
+        self.invoicepicture.setObjectName("invoicepicture")
+        self.gridLayout_72.addWidget(self.invoicepicture, 2, 1, 1, 1)
         self.drivernumserv = QtWidgets.QLineEdit(self.frame_81)
         self.drivernumserv.setObjectName("drivernumserv")
         self.gridLayout_72.addWidget(self.drivernumserv, 0, 0, 1, 2)
@@ -2176,10 +2176,10 @@ class Ui_FleetX(object):
         FleetX.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(FleetX)
-        self.loginstackedwidget.setCurrentIndex(2)
-        self.mainstackedwidget.setCurrentIndex(1)
-        self.carswidget.setCurrentIndex(4)
-        self.driverwidget.setCurrentIndex(1)
+        self.loginstackedwidget.setCurrentIndex(0)
+        self.mainstackedwidget.setCurrentIndex(5)
+        self.carswidget.setCurrentIndex(0)
+        self.driverwidget.setCurrentIndex(0)
         self.tabWidget.setCurrentIndex(0)
         self.servicetable.setCurrentIndex(0)
         self.userwidget.setCurrentIndex(0)
@@ -2191,7 +2191,7 @@ class Ui_FleetX(object):
     def retranslateUi(self, FleetX):
         _translate = QtCore.QCoreApplication.translate
         FleetX.setWindowTitle(_translate("FleetX", "Fleet Manager"))
-        self.label_4.setText(_translate("FleetX", "Login Here..."))
+        self.label_4.setText(_translate("FleetX", "LOGIN HERE........"))
         self.label_2.setText(_translate("FleetX", "Username"))
         self.label_3.setText(_translate("FleetX", "Password"))
         self.loginbutton.setText(_translate("FleetX", "Login"))

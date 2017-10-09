@@ -50,7 +50,7 @@ QMainWindow{background-color:#fffafa;}
        <item row="0" column="0">
         <widget class="QStackedWidget" name="loginstackedwidget">
          <property name="currentIndex">
-          <number>2</number>
+          <number>0</number>
          </property>
          <widget class="QWidget" name="page">
           <layout class="QGridLayout" name="gridLayout_13">
@@ -95,7 +95,7 @@ QMainWindow{background-color:#fffafa;}
                  <item row="0" column="0">
                   <widget class="QLabel" name="label_4">
                    <property name="text">
-                    <string>Login Here...</string>
+                    <string>LOGIN HERE........</string>
                    </property>
                   </widget>
                  </item>
@@ -984,7 +984,7 @@ QMainWindow{background-color:#fffafa;}
            <item row="0" column="1">
             <widget class="QStackedWidget" name="mainstackedwidget">
              <property name="currentIndex">
-              <number>0</number>
+              <number>5</number>
              </property>
              <widget class="QWidget" name="page_4">
               <layout class="QGridLayout" name="gridLayout_29">
@@ -994,7 +994,7 @@ QMainWindow{background-color:#fffafa;}
                   <item row="0" column="0">
                    <widget class="QTabWidget" name="carswidget">
                     <property name="currentIndex">
-                     <number>4</number>
+                     <number>0</number>
                     </property>
                     <widget class="QWidget" name="tab">
                      <attribute name="title">
@@ -1940,7 +1940,7 @@ QMainWindow{background-color:#fffafa;}
                <item row="0" column="0">
                 <widget class="QTabWidget" name="driverwidget">
                  <property name="currentIndex">
-                  <number>1</number>
+                  <number>0</number>
                  </property>
                  <widget class="QWidget" name="tab_4">
                   <attribute name="title">
@@ -2838,7 +2838,7 @@ QMainWindow{background-color:#fffafa;}
                        <widget class="QLineEdit" name="invoiceimage"/>
                       </item>
                       <item row="2" column="1">
-                       <widget class="QPushButton" name="pushButton">
+                       <widget class="QPushButton" name="invoicepicture">
                         <property name="text">
                          <string/>
                         </property>
