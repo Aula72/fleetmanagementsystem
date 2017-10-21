@@ -5,11 +5,13 @@ import uimain
 import os, shutil, time, sys, string
 from random import randint
 
+
 class MainClassFleetX(QMainWindow, uimain.Ui_FleetX):
     signal = pyqtSignal()
     def __init__(self):
         QMainWindow.__init__(self)
         self.setupUi(self)
+
         self.carsbutton.clicked.connect(self.cars)
         self.driversbutton.clicked.connect(self.drivers)
         self.maintenancebutton.clicked.connect(self.maintenance)
@@ -32,8 +34,8 @@ class MainClassFleetX(QMainWindow, uimain.Ui_FleetX):
         self.trayicon = QIcon("icons/app-icon.png")
         self.objectrayicon = QSystemTrayIcon(self.trayicon, self)
         self.traymenu = QMenu()
-        self.xclose = QAction("Close", self)
-        self.xlogout = QAction("Logout", self)
+        self.xclose = QAction("Close", self.traymenu)
+        self.xlogout = QAction("Logout", self.traymenu)
         self.traymenu.addActions([self.xlogout,self.xclose])
         self.objectrayicon.setContextMenu(self.traymenu)
         self.xclose.triggered.connect(self.close)
@@ -42,11 +44,11 @@ class MainClassFleetX(QMainWindow, uimain.Ui_FleetX):
         self.usernamedisplay.setText("Aula")
         self.frontimagebutton.clicked.connect(self.getfile)
         self.invoicepicture.clicked.connect(self.invoicesupload)
-               
+        #self.addaccident.clicked.connect(self.abouts)   
     
     def deploying(self):
         self.mainstackedwidget.setCurrentIndex(7)
-
+        
     def firstpage(self):
         self.loginstackedwidget.setCurrentIndex(2)
         self.cars()
@@ -100,19 +102,29 @@ class MainClassFleetX(QMainWindow, uimain.Ui_FleetX):
         self.permit_class = self.permitclass.currentText()
         #self.driverpics()
         #print(self.gender)
-        
+        self.clearlines()
     def addaccidenteventfunction(self):
-        self.carregnumber = self.caraccnumber.text()
+        
+        self.accdriver = self.driverid.text()        
+        self.carregnumber = (self.caraccnumber.text()).capitalize()
         self.acclocation = self.accidentlocation.text()
         self.acctime = self.accidentdate.date()
         self.caracc = self.carstatus.currentText()
-        self.accdriver = int(self.driverid.text())
         self.acctype = self.accidenttype.currentText()
         self.accpassengerstatus = self.passengerstatus.currentText()
         self.accdriverstatus = self.driverstatus.currentText()
         self.accdescption = self.briefdescription.toPlainText()
         self.accresolution = self.resolution.toPlainText()
         
+        #validations
+        self.accdriverval = QIntValidator()
+        self.driverid.setValidator(self.accdriverval)
+        '''
+        self.sending = self.sender()
+        self.state = 
+        self.clearlines()
+        '''
+    
     def viewpreviousmaintenancefunction(self):
         self.newitem = self.viewpreviousmaintenance.rowCount()
         self.viewpreviousmaintenance.insertRow(self.newitem)
@@ -166,7 +178,46 @@ class MainClassFleetX(QMainWindow, uimain.Ui_FleetX):
         self.invoicepath = ".\\allpics\\invoices\\"+str(self.numcarserv.text()).replace(" ","")+"card"+".png"
         self.invoiceimage.setText(self.upl[0])
         shutil.copy(self.upl[0], self.invoicepath)
-       
+    
+    def abouts(self):
+        #self.warn=QMessageBox.information(self, "My Message box", "hello", defaultButton=QMessageBox.NoButton)
+        #self.warn.removeButton()
+        self.mypi = QPainter(self)
+        self.mypi.drawEllipse(self.mypi, 0,0)
+
+
+    def clearlines(self):
+        for self.widget in qApp.allWidgets():
+            if isinstance(self.widget, QLineEdit):
+                self.widget.clear()
+        for self.widget in qApp.allWidgets():
+            if isinstance(self.widget, QTextEdit):
+                self.widget.clear()
+        for self.widget in qApp.allWidgets():
+            if isinstance(self.widget, QComboBox):
+                self.widget.setCurrentIndex(0)
+    
+    def validating(self, *args, **kwargs):
+        self.sender = self.sender()
+        self.validator = self.sender.validator()
+        self.state = self.validator.validate(sender.text(), 0)[0]
+        if self.state == QtGui.QValidator.Acceptable:
+            self.color = '#c4df9b' # green
+        elif state == QtGui.QValidator.Intermediate:
+            self.color = '#fff79a' # yellow
+        else:
+            self.color = '#f6989d' # red
+        self.sender.setStyleSheet('QLineEdit { background-color: %s }' % color)
+class ValidateForms(QValidator,MainClassFleetX):
+    def __init__(self):
+        QValidator.__init__(self)
+        
+        
+    def errordriver(self):
+        try:
+            pass
+        except None:
+            pass
 if __name__=="__main__":
     #MainClassFleetX.pictures(None)
     myapp = QApplication(sys.argv)
