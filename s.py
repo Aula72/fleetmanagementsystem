@@ -9,6 +9,8 @@ def dbfunction(l, j ):
     cursors.execute(pre)
 def newsreport():
     print("hello")
+def lop():
+    pass
 p = input("the first value:")
 q = input("the second value: ")      
 dbfunction(p, q)
